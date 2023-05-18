@@ -1,0 +1,75 @@
+.participants-wrapper {
+  margin-bottom: 155px;
+
+  .participants-text {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 38px;
+    margin-bottom: 70px;
+    color: #2858FF;
+  }
+
+  .participants-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 560px);
+    grid-gap: 45px 98px;
+
+    .participants-contact-us {
+      border: 1px solid #FF018A;
+      border-top-right-radius: 9px;
+      border-top-left-radius: 9px;
+
+      .participants-contact-window-header {
+        background: #FFEEEB;
+        border-top-right-radius: 9px;
+        border-top-left-radius: 9px;
+        max-height: 23px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 8px;
+        width: 100%;
+        border-bottom: 1px solid #FF018A;
+
+        .dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #FF018A;
+
+          &:not(:last-child) { margin-right: 9px; }
+
+          &:nth-child(2) { background: #FF12AE; }
+          &:last-child { background: #1BC6E3; }
+        }
+      }
+
+      .participants-contact-content {
+        position: relative;
+        background: #FFEEEB url('../../../../../src/components/Common/images/grid.png');
+        height: 100%;
+        max-height: 268px;
+        padding: 50px;
+
+        .participants-contact-text {
+          color: #FF018A;
+          font-size: 32px;
+          line-height: 36px;
+          font-weight: 600;
+          margin-bottom: 45px;
+          max-width: 300px;
+        }
+
+        .button {
+          display: none;
+        }
+
+        .cubes-image {
+          position: absolute;
+          right: 0;
+          bottom: -45px;
+        }
+      }
+    }
+  }
+}

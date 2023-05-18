@@ -1,0 +1,6 @@
+.arrow-wrapper {
+  height: fit-content;
+  transition: all 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &.rotate { transform: rotate(180deg); }
+}
