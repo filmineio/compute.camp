@@ -11,7 +11,7 @@ const ScheduleSection: FC = () => {
   const contentEl2 = useRef<HTMLDivElement>(null);
 
   return (
-    <div className={styles['schedule-section-wrapper']}>
+    <div id="schedule" className={styles['schedule-section-wrapper']}>
       <div className={styles['schedule-buttons-wrapper']}>
         <button
           type="button"

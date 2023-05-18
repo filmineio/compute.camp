@@ -85,6 +85,25 @@ export const SCHEDULE_DAY_2 = [
   },
 ];
 
+export const MENU_ITEMS = [
+  {
+    label: 'Registration',
+    url: '#',
+  },
+  {
+    label: 'Schedule',
+    url: '#schedule',
+  },
+  {
+    label: 'About Belgrade',
+    url: '#',
+  },
+  {
+    label: 'Participants',
+    url: '#participants',
+  },
+];
+
 export const PARTICIPANTS = [
   {
     name: 'Speaker Name',
