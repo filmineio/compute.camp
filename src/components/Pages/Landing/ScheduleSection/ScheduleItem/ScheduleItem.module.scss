@@ -3,6 +3,10 @@
   border: 2px solid #FFFFFF;
   display: flex;
 
+  @media (max-width: 769px) {
+    flex-wrap: wrap;
+  }
+
   &:not(:last-child) {
     margin-bottom: 11px;
   }
@@ -14,11 +18,25 @@
     margin-top: auto;
     margin-bottom: auto;
 
+    @media (max-width: 999px) {
+      width: 250px;
+      padding: 25px 20px 15px;
+    }
+
+    @media (max-width: 769px) {
+      width: 100%;
+    }
+
     .schedule-item-info-type-time {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 42px;
+
+      @media (min-width: 769px) and (max-width: 999px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
       .type {
         font-size: 18px;
@@ -26,6 +44,10 @@
         background: #09F5E6;
         border-radius: 10px;
         padding: 5px 24px;
+
+        @media (min-width: 769px) and (max-width: 999px) {
+          margin-bottom: 20px;
+        }
 
         &.talks {
           color: #4A40DC;
@@ -64,6 +86,14 @@
     width: 1px;
     background-color: #14D8E4;
     flex-shrink: 0;
+
+    @media (max-width: 999px) {
+      margin: 15px 25px 15px 20px;
+    }
+
+    @media (max-width: 769px) {
+      display: none;
+    }
   }
 
   .schedule-item-description {
@@ -72,6 +102,19 @@
     flex-direction: column;
     margin-top: auto;
     margin-bottom: auto;
+
+    @media (max-width: 1099px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 999px) {
+      padding-right: 20px;
+    }
+
+    @media (max-width: 769px) {
+      padding-left: 20px;
+    }
 
     h5 {
       font-family: 'Inter', sans-serif;
@@ -83,6 +126,11 @@
       font-size: 20px;
       margin-bottom: 0;
       line-height: 29px;
+
+      @media (max-width: 899px) {
+        font-size: 18px;
+        line-height: 25px;
+      }
     }
   }
 }

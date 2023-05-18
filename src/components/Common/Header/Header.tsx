@@ -19,7 +19,7 @@ const Header: FC = () => {
   return (
     <div className={styles['header-wrapper']}>
       <Link href="/" passHref className={styles['logo-wrapper']} aria-label="Logo">
-        <div className={styles['logo-desktop-wrapper']}>
+        <div className={styles['logo-wrapper']}>
           <Logo />
         </div>
       </Link>

@@ -1,6 +1,10 @@
 .schedule-section-wrapper {
   padding-top: 105px;
 
+  @media (max-width: 769px) {
+    padding-top: 50px;
+  }
+
   h2 {
     margin-bottom: 45px;
   }
@@ -19,16 +23,40 @@
       position: relative;
       color: #fff;
 
+      @media (max-width: 904px) {
+        width: 250px;
+        padding: 15px;
+      }
+
+      @media (max-width: 569px) {
+        width: calc(50% - 10px);
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       .text {
         font-size: 25px;
         font-family: 'Conthrax SemiBold', sans-serif;
         padding-right: 10px;
-          z-index: 1;
+        z-index: 1;
+
+        @media (max-width: 569px) {
+          padding-right: 0;
+          margin-bottom: 10px;
+        }
+
+        @media (max-width: 904px) {
+          font-size: 20px;
+        }
       }
 
       .date {
         font-size: 18px;
-          z-index: 1;
+        z-index: 1;
+
+        @media (max-width: 904px) {
+          font-size: 16px;
+        }
       }
 
       &.day-01 {
@@ -36,6 +64,10 @@
         border: 2px solid transparent;
         position: relative;
         background: transparent;
+
+        @media (max-width: 904px) {
+          margin-right: 20px;
+        }
 
         &:before {
           content: '';
