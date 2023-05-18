@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 import Image from 'next/image';
 import { FaqSingleQA } from './FaqSingleQA/FaqSingleQA';
 import { FAQ } from '../../../../constants/general';
-import grid from '../../../Common/images/faq-grid.svg';
+// import grid from '../../../Common/images/faq-grid.svg';
 import faqImage from '../../../Common/images/faq-image.svg';
 
 import styles from './Faq.module.scss';
@@ -31,7 +31,6 @@ export const Faq: FC = () => {
         ))}
       </div>
 
-      <Image className={styles['faq-grid']} src={grid} alt="grid" />
       <Image className={styles['faq-image']} src={faqImage} alt="faq-image" />
     </div>
   );

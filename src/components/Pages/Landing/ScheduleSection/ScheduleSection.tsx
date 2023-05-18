@@ -1,4 +1,4 @@
-import { FC, useRef, useState } from 'react';
+import { FC, useEffect, useReducer, useRef, useState } from 'react';
 import { SCHEDULE_DAY_1, SCHEDULE_DAY_2 } from 'constants/general';
 import clsx from 'clsx';
 import ScheduleItem from './ScheduleItem/ScheduleItem';
@@ -6,12 +6,18 @@ import ScheduleItem from './ScheduleItem/ScheduleItem';
 import styles from './ScheduleSection.module.scss';
 
 const ScheduleSection: FC = () => {
-  const [isFirstDayActive, setIsFirstDayActive] = useState(false);
+  const [isFirstDayActive, setIsFirstDayActive] = useState(true);
+  const [, forceUpdate] = useReducer((x) => x + 1, 0);
   const contentEl1 = useRef<HTMLDivElement>(null);
   const contentEl2 = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    forceUpdate();
+  }, []);
+
   return (
     <div id="schedule" className={styles['schedule-section-wrapper']}>
+      <h2>Schedule</h2>
       <div className={styles['schedule-buttons-wrapper']}>
         <button
           type="button"

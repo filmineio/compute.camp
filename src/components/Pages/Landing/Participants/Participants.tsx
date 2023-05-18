@@ -9,7 +9,7 @@ import styles from './Participants.module.scss';
 
 const Participants: FC = () => {
   return (
-    <div className={styles['participants-wrapper']}>
+    <div id="participants" className={styles['participants-wrapper']}>
       <SectionTitle title="Participants" />
 
       <div className={styles['participants-text']}>

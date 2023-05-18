@@ -1,8 +1,10 @@
 .schedule-section-wrapper {
   padding-top: 105px;
+  padding-bottom: 100px;
 
   @media (max-width: 769px) {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   h2 {
@@ -185,12 +187,12 @@
 
   .schedule-content-wrapper {
     overflow: hidden;
-    transition: all 400ms ease-in-out;
+    transition: all 280ms ease-in-out;
     transform: scaleY(0);
     transform-origin: top;
 
     &.active {
-      transition-delay: 650ms;
+      transition-delay: 450ms;
       transform: scaleY(1);
     }
   }

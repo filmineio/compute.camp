@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "concurrently --kill-others -n NEXT,ESLINT,TS -c yellow,#0f870d,blue,#00ff00 \"next dev\" \"watch --wait=1 'next lint -f visualstudio' ./src\" \"yarn ts\"",
-    "build": "tinacms build && next build",
-    "start": "tinacms build && next start",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "ts": "tsc --noEmit --incremental --preserveWatchOutput --pretty --watch",

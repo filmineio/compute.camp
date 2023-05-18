@@ -1,11 +1,11 @@
-import { FC, JSX } from 'react';
+import { FC, ReactElement } from 'react';
 import Link, { LinkProps } from 'next/link';
 
 type Props = {
   linkProps: LinkProps;
   className?: string;
   targetBlank?: boolean;
-  children: JSX.Element;
+  children: ReactElement;
   stopPropagation?: boolean;
 };
 const CustomLink: FC<Props> = ({

@@ -5,7 +5,17 @@
     left: 0;
     width: 100%;
     height: 980px;
-    background: url("../../../../public/img/background-pattern.svg") repeat;
+    background: url("../../../../public/img/background-pattern-white.svg") repeat;
+    opacity: 0.25;
+  }
+
+  .grid-middle {
+    position: absolute;
+    top: 1400px;
+    left: 0;
+    width: 100%;
+    height: 1600px;
+    background: url("../../../../public/img/background-pattern-blue.svg") repeat;
     opacity: 0.25;
   }
 
@@ -15,7 +25,7 @@
     left: 0;
     width: 100%;
     height: 945px;
-    background: url("../../../../public/img/background-pattern.svg") repeat;
+    background: url("../../../../public/img/background-pattern-white.svg") repeat;
     opacity: 0.25;
   }
 
