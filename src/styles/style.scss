@@ -60,11 +60,11 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
   background: var(--black);
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  scroll-behavior: smooth;
   color: var(--white);
   background-color: #232149;
   background: linear-gradient(#232149 0%, #512BDA 10%, #07F8E6 20%, #E0FFFF 28%, #FFFFFF 35%, #FFFFFF 65%, #E0FFFF 72%, #07F8E6 80%, #512BDA 90%, #232149 100%);
@@ -74,15 +74,16 @@ body {
   padding: 0;
   font-size: 0.875rem;
   line-height: 1.2;
-  min-height: 100vh;
+  //min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 #__next {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
+  position: relative;
 
   .wrapper {
     display: flex;

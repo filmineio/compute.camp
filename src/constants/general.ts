@@ -82,3 +82,22 @@ export const SCHEDULE_DAY_2 = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscinget.',
   },
 ];
+
+export const MENU_ITEMS = [
+  {
+    label: 'Registration',
+    url: '#',
+  },
+  {
+    label: 'Schedule',
+    url: '#schedule',
+  },
+  {
+    label: 'About Belgrade',
+    url: '#',
+  },
+  {
+    label: 'Participants',
+    url: '#participants',
+  },
+];
