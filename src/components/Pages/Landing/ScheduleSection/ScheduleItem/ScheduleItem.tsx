@@ -18,9 +18,9 @@ const ScheduleItem: FC<Props> = ({ item }) => (
   <div className={styles['schedule-item-wrapper']}>
     <div className={styles['schedule-item-info']}>
       <div className={styles['schedule-item-info-type-time']}>
-        <span className={clsx(styles.type, styles[item.type.toLowerCase()])}>
+        <h4 className={clsx(styles.type, styles[item.type.toLowerCase()])}>
           {item.type}
-        </span>
+        </h4>
         <span className={styles.time}>{item.time}</span>
       </div>
       <p className={styles.label}>{item.label}</p>
