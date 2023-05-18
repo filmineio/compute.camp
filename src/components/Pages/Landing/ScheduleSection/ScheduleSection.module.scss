@@ -110,7 +110,7 @@
 
               @supports (font: -apple-system-body) and (-webkit-appearance: none) {
                 @media (max-width: 499px) {
-                  background-image: linear-gradient(to top right, #F74E76, #FF5B72);
+                  background-image: linear-gradient(to top right, #FF5B72 0%, #F74E76 95%);
                 }
               }
 
