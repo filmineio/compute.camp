@@ -4,7 +4,7 @@ import Illustration2 from 'components/Common/Icons/Illustration2';
 import styles from './DescriptionSection.module.scss';
 
 const DescriptionSection: FC = () => (
-  <div className={styles['description-section']}>
+  <div className={styles['description-section-wrapper']}>
     <p>
       Compute Camp is a yearly gathering of compute science enthusiasts innovating in the
       different computing, from web3 builders, databases enthusiasts, cloud veterans, or

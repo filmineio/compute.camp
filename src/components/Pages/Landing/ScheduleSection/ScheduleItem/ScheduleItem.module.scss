@@ -1,0 +1,77 @@
+.schedule-item-wrapper {
+  background-color: #4A40DC;
+  border: 2px solid #FFFFFF;
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  .schedule-item-info {
+    width: 405px;
+    flex-shrink: 0;
+    padding: 60px 40px 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    .schedule-item-info-type-time {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 42px;
+
+      .type {
+        font-size: 18px;
+        font-family: 'Conthrax SemiBold', sans-serif;
+        background: #09F5E6;
+        border-radius: 10px;
+        padding: 5px 24px;
+
+        &.talks {
+          color: #4A40DC;
+        }
+
+        &.break {
+          background-color: #FF8854;
+        }
+
+        &.workshop {
+          background-color: #FF008A;
+          padding-right: 19px;
+          padding-left: 19px;
+        }
+      }
+
+      .time {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .divider {
+    display: flex;
+    margin: 40px 65px 40px 41px;
+    width: 1px;
+    background-color: #14D8E4;
+    flex-shrink: 0;
+  }
+
+  .schedule-item-description {
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    h5 {
+      font-family: 'Inter', sans-serif;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -66,8 +66,8 @@ body {
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
   color: var(--white);
-  //background: linear-gradient(#232149 0%, #512BDA 10%, #07F8E6 20%, #E0FFFF 28%, #FFFFFF 35%, #FFFFFF 65%, #E0FFFF 72%, #07F8E6 80%, #512BDA 90%, #232149 100%);
   background-color: #232149;
+  background: linear-gradient(#232149 0%, #512BDA 10%, #07F8E6 20%, #E0FFFF 28%, #FFFFFF 35%, #FFFFFF 65%, #E0FFFF 72%, #07F8E6 80%, #512BDA 90%, #232149 100%);
   font-weight: 400;
   margin: 0;
   border: none;
@@ -170,19 +170,19 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 h6 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 ::-webkit-scrollbar {
@@ -193,18 +193,18 @@ h6 {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--black);
+  background: var(--white);
   border-radius: 10px;
   overflow: hidden;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--slate);
+  background: #512BDA;
   border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--slate);
+  background: #512BDA;
 }
 
 input::-webkit-contacts-auto-fill-button,

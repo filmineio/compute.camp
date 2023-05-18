@@ -26,8 +26,9 @@ const ScheduleItem: FC<Props> = ({ item }) => (
       <p className={styles.label}>{item.label}</p>
       <p className={styles.author}>{item.author}</p>
     </div>
+    <div className={styles.divider} />
     <div className={styles['schedule-item-description']}>
-      <h6>{item.title}</h6>
+      <h5>{item.title}</h5>
       <p>{item.description}</p>
     </div>
   </div>

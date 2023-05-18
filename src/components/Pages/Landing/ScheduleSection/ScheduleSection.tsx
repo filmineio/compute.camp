@@ -5,7 +5,7 @@ import ScheduleItem from './ScheduleItem/ScheduleItem';
 import styles from './ScheduleSection.module.scss';
 
 const ScheduleSection: FC = () => (
-  <div className={styles['schedule-section']}>
+  <div className={styles['schedule-section-wrapper']}>
     <div className={styles['schedule-buttons-wrapper']}>
       <button type="button" className={styles['day-01']}>
         <span>Day 01</span>
