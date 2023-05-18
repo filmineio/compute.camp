@@ -5,6 +5,7 @@ import DescriptionSection from './DescriptionSection/DescriptionSection';
 import ScheduleSection from './ScheduleSection/ScheduleSection';
 import Sponsors from './Sponsors/Sponsors';
 import Participants from './Participants/Participants';
+import { Faq } from './Faq/Faq';
 // import Header from 'components/Common/Header/Header';
 // import Footer from 'components/Common/Footer/Footer';
 
@@ -20,6 +21,7 @@ const Landing: FC = () => {
         <ScheduleSection />
         <Sponsors />
         <Participants />
+        <Faq />
         {/* <Footer /> */}
       </div>
     </div>

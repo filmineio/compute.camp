@@ -1,0 +1,56 @@
+.faq-single-qa-wrapper {
+  padding: 20px;
+  // TODO - ADD correct gradient
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(#3EFAED, #3EFAED) 40;
+  //border-image: linear-gradient(90deg, #3EFAED 45.91%, rgba(62, 250, 237, 0) 96.18%);
+
+
+  &:hover { cursor: pointer; }
+
+  .qa-section-single-qa-visible-wrapper {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    cursor: pointer;
+
+    svg {
+      min-width: 26px;
+      min-height: 26px;
+    }
+
+    .qa-section-single-qa-visible-question {
+      user-select: none;
+      font-size: 22px;
+      line-height: 33px;
+      font-weight: 500;
+      color: var(--white);
+      margin-right: 10px;
+      transition: all 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  }
+
+  .qa-section-single-qa-answer-wrapper {
+    will-change: opacity, height;
+    overflow: hidden;
+
+    .qa-section-single-qa-answer-content {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 42px;
+      max-width: 970px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .qa-section-single-qa-visible-wrapper {
+      .qa-section-single-qa-visible-question {
+        font-size: 18px;
+      }
+    }
+
+    .qa-section-single-qa-answer-wrapper .qa-section-single-qa-answer-content { font-size: 14px; }
+  }
+
+  @media only screen and (max-width: 500px) { padding: 20px; }
+}
