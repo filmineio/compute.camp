@@ -1,4 +1,13 @@
 .landing-wrapper {
+  .grid {
+    --opacity: 0.35;
+    --size: 47px;
+    background-size: var(--size) var(--size);
+    background-image:
+      linear-gradient(to right, hsl(50 0% 85% / var(--opacity)) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(50 0% 85% / var(--opacity)) 1px, transparent 1px);
+  }
+
   .grid-top {
     position: absolute;
     top: 65px;
