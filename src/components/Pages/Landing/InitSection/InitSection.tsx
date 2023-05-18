@@ -4,7 +4,7 @@ import Illustration1 from 'components/Common/Icons/Illustration1';
 import styles from './InitSection.module.scss';
 
 const InitSection: FC = () => (
-  <div className={styles['init-section']}>
+  <div className={styles['init-section-wrapper']}>
     <div className={styles['init-section-text']}>
       <p>June 7th & 8th, 2023 Belgrade, Serbia</p>
       <h1>
