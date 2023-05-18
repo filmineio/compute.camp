@@ -7,7 +7,6 @@ import ScheduleSection from './ScheduleSection/ScheduleSection';
 import Sponsors from './Sponsors/Sponsors';
 import Participants from './Participants/Participants';
 import { Faq } from './Faq/Faq';
-// import Footer from 'components/Common/Footer/Footer';
 
 import styles from './Landing.module.scss';
 

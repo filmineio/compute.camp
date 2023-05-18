@@ -1,5 +1,5 @@
 .faq-wrapper {
-  margin: 0 auto;
+  margin: 0 auto 120px auto;
   position: relative;
 
   .faq-grid {
@@ -13,7 +13,7 @@
     position: absolute;
     bottom: -138px;
     right: -35px;
-    z-index: 11;
+    z-index: 150;
   }
 
   .faq-content {

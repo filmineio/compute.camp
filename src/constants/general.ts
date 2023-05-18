@@ -1,19 +1,56 @@
 import participant from '../components/Common/images/paticipant.png';
+import Github from '../components/Common/Icons/Github';
+import Twitter from '../components/Common/Icons/Twitter';
+import YouTube from '../components/Common/Icons/YouTube';
 
 export const META_IMAGE_LINK_FILMINE = 'https://web3mine.io/static/images/meta.png';
 
 export const FOOTER_SOCIALS = [
   {
     alt: 'Github',
-    url: 'https://github.com/filmineio/',
+    url: 'https://github.com',
+    Icon: Github,
   },
   {
     alt: 'Twitter',
-    url: 'https://twitter.com/web3mine',
+    url: 'https://twitter.com',
+    Icon: Twitter,
   },
   {
-    alt: 'Discord',
-    url: 'https://discord.gg/K5pMVWZ2AD',
+    alt: 'Youtube',
+    url: 'https://youtube.com',
+    Icon: YouTube,
+  },
+];
+
+export const FOOTER_LINKS = [
+  {
+    label: 'About',
+    url: '#',
+  },
+  {
+    label: 'Registration',
+    url: '#',
+  },
+  {
+    label: 'Tickets',
+    url: '#',
+  },
+  {
+    label: 'Schedule',
+    url: '#schedule',
+  },
+  {
+    label: 'Participants',
+    url: '#participants',
+  },
+  {
+    label: 'About Belgrade',
+    url: '#',
+  },
+  {
+    label: 'FAQ',
+    url: '#',
   },
 ];
 

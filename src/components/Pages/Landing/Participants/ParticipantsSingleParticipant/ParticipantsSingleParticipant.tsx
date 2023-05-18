@@ -59,15 +59,15 @@ const ParticipantsSingleParticipant: FC<ParticipantProps> = ({
           <div className={styles['participants-single-participant-about']}>{about}</div>
 
           <div className={styles['participants-single-participant-socials']}>
-            <Link href={github} passHref>
+            <Link href={github} target="_blank" passHref>
               <Github />
             </Link>
 
-            <Link href={twitter} passHref>
+            <Link href={twitter} target="_blank" passHref>
               <Twitter />
             </Link>
 
-            <Link href={linkedIn} passHref>
+            <Link href={linkedIn} target="_blank" passHref>
               <LinkedIn />
             </Link>
           </div>
