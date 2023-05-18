@@ -1,0 +1,31 @@
+.sponsors-wrapper {
+  margin-bottom: 150px;
+
+  .sponsors-content {
+    display: flex;
+
+    .sponsors-text {
+      font-size: 22px;
+      color: #2858FF;
+      font-weight: 500;
+      max-width: 450px;
+      margin-right: 45px;
+      line-height: 38px;
+    }
+
+    .sponsors-logos {
+      display: flex;
+      flex-direction: column;
+
+      .logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:first-child { margin-bottom: 35px; }
+
+        img:not(:last-child) { margin-right: 35px; }
+      }
+    }
+  }
+}
