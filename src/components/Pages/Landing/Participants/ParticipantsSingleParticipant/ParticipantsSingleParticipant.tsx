@@ -51,7 +51,7 @@ const ParticipantsSingleParticipant: FC<ParticipantProps> = ({
         </div>
 
         <div className={styles['participants-single-participant-info']}>
-          <h3 className={styles['participants-single-participant-name']}>{name}</h3>
+          <h4 className={styles['participants-single-participant-name']}>{name}</h4>
 
           <div className={styles['participants-single-participant-company']}>
             {company}
