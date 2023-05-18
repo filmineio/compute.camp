@@ -3,7 +3,7 @@ import Github from '../components/Common/Icons/Github';
 import Twitter from '../components/Common/Icons/Twitter';
 import YouTube from '../components/Common/Icons/YouTube';
 
-export const META_IMAGE_LINK_FILMINE = 'https://web3mine.io/static/images/meta.png';
+export const META_IMAGE_LINK_FILMINE = '';
 
 export const FOOTER_SOCIALS = [
   {

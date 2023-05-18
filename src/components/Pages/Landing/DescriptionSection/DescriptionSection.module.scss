@@ -3,6 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 60px;
+
+  @media (max-width: 769px) {
+    padding-bottom: 5px;
+  }
 
   @media (max-width: 949px) {
     flex-direction: column;
