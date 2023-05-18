@@ -81,12 +81,12 @@
         }
 
         .arrow {
-          width: 25px;
+          width: 24px;
           height: 50px;
           overflow: hidden;
           float: left;
           position: absolute;
-          top: calc(100% - 12.5px);
+          top: calc(100% - 13px);
           left: 50%;
           transform: translateX(-50%) rotate(-90deg);
 
@@ -109,11 +109,13 @@
               border: 2px solid transparent;
 
               @supports (font: -apple-system-body) and (-webkit-appearance: none) {
-                //background-image: linear-gradient(to top right, #F74E76, #F44179);
+                @media (max-width: 899px) {
+                  background-image: linear-gradient(to top right, #F74E76, #F44179);
+                }
               }
 
               @-moz-document url-prefix() {
-                background-image: linear-gradient(to top right, #F74E76, #F44179);
+                //background-image: linear-gradient(to top right, #FF5B72, #F44179);
               }
             }
           }
@@ -144,12 +146,12 @@
         }
 
         .arrow {
-          width: 25px;
+          width: 24px;
           height: 50px;
           overflow: hidden;
           float: left;
           position: absolute;
-          top: calc(100% - 12.5px);
+          top: calc(100% - 13px);
           left: 50%;
           transform: translateX(-50%) rotate(-90deg);
 
