@@ -1,5 +1,15 @@
 @import 'input_field';
 
+@font-face {
+  font-family: 'Conthrax SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Conthrax SemiBold'),
+    url('../../public/font/conthrax-sb.woff')
+    format('woff');
+}
+
 body,
 body[data-theme="dark"] {
   --red: #cc3333;
@@ -54,7 +64,7 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Conthrax SemiBold', sans-serif;
   scroll-behavior: smooth;
   color: var(--white);
   background: linear-gradient(#232149 0%, #512BDA 10%, #07F8E6 25%, #E0FFFF 35%, #FFFFFF 45%, #FFFFFF 55%, #E0FFFF 65%, #07F8E6 75%, #512BDA 90%, #232149 100%);
@@ -102,7 +112,7 @@ input,
 textarea,
 keygen,
 select {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Conthrax SemiBold', sans-serif;
 }
 
 input::-webkit-outer-spin-button,
