@@ -1,0 +1,15 @@
+@mixin link-underline-decor {
+  background-image: linear-gradient(0deg, var(--white), var(--white));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  transition: background-size 250ms;
+  padding-bottom: 2px;
+  color: var(--white);
+  position: relative;
+
+  &:hover {
+    background-size: 100% 1px;
+    color: var(--white);
+  }
+}
