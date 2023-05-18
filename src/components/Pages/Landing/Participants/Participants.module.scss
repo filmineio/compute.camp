@@ -48,16 +48,20 @@
         position: relative;
         background: #FFEEEB url('../../../../../src/components/Common/images/grid.png');
         height: 100%;
-        max-height: 304px;
+        max-height: 268px;
         padding: 50px;
 
         .participants-contact-text {
           color: #FF018A;
           font-size: 32px;
           line-height: 36px;
-          //font-weight: 600;
+          font-weight: 600;
           margin-bottom: 45px;
-          max-width: 380px;
+          max-width: 300px;
+        }
+
+        .button {
+          display: none;
         }
 
         .cubes-image {

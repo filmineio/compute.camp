@@ -46,7 +46,9 @@ const Participants: FC = () => {
               Want to speak on our event?
             </div>
 
-            <button type="button">CONTACT US!</button>
+            <button type="button" className="button primary">
+              CONTACT US!
+            </button>
             <Image className={styles['cubes-image']} src={cubes} alt="cubes" />
           </div>
         </div>
