@@ -37,9 +37,9 @@
 
       .text {
         font-size: 25px;
-        font-family: 'Conthrax SemiBold', sans-serif;
         padding-right: 10px;
         z-index: 1;
+        margin-bottom: 0;
 
         @media (max-width: 569px) {
           padding-right: 0;

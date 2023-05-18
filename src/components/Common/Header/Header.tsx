@@ -27,6 +27,7 @@ const Header: FC = () => {
         className={styles['hamburger-wrapper']}
         type="button"
         onClick={toggleMainMenuMobile}
+        aria-label="toggle menu"
       >
         <div
           className={clsx(styles['hamburger-lines'], {

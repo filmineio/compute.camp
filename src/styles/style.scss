@@ -216,6 +216,7 @@ input::-webkit-credentials-auto-fill-button {
 }
 
 .button {
+  font-family: 'Conthrax SemiBold', sans-serif;
   margin: 0;
   padding: 17px 11px;
   font-weight: 700;
@@ -229,7 +230,6 @@ input::-webkit-credentials-auto-fill-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--green-500);
   background: linear-gradient(90deg, #FF008A 9.46%, #EF8E65 89.34%);
   border: 1px solid #FFFFFF;
 

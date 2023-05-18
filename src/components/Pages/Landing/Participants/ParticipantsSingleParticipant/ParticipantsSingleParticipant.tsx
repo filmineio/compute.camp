@@ -51,7 +51,7 @@ const ParticipantsSingleParticipant: FC<ParticipantProps> = ({
         </div>
 
         <div className={styles['participants-single-participant-info']}>
-          <div className={styles['participants-single-participant-name']}>{name}</div>
+          <h3 className={styles['participants-single-participant-name']}>{name}</h3>
 
           <div className={styles['participants-single-participant-company']}>
             {company}
@@ -59,15 +59,15 @@ const ParticipantsSingleParticipant: FC<ParticipantProps> = ({
           <div className={styles['participants-single-participant-about']}>{about}</div>
 
           <div className={styles['participants-single-participant-socials']}>
-            <Link href={github} target="_blank" passHref>
+            <Link href={github} target="_blank" passHref aria-label="Github">
               <Github />
             </Link>
 
-            <Link href={twitter} target="_blank" passHref>
+            <Link href={twitter} target="_blank" passHref aria-label="Twitter">
               <Twitter />
             </Link>
 
-            <Link href={linkedIn} target="_blank" passHref>
+            <Link href={linkedIn} target="_blank" passHref aria-label="LinkedIn">
               <LinkedIn />
             </Link>
           </div>

@@ -26,7 +26,7 @@ const ScheduleSection: FC = () => {
           })}
           onClick={() => setIsFirstDayActive(true)}
         >
-          <span className={styles.text}>Day 01</span>
+          <h4 className={styles.text}>Day 01</h4>
           <span className={styles.date}>Wed, June 7</span>
           <div className={styles.arrow}>
             <div className={styles['gradient-triangle']} />
@@ -39,7 +39,7 @@ const ScheduleSection: FC = () => {
           })}
           onClick={() => setIsFirstDayActive(false)}
         >
-          <span className={styles.text}>Day 02</span>
+          <h4 className={styles.text}>Day 02</h4>
           <span className={styles.date}>Thu, June 8</span>
           <div className={styles.arrow}>
             <div className={styles['gradient-triangle']} />

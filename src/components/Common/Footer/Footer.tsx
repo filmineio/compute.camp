@@ -23,6 +23,7 @@ const Footer: FC = () => {
               scroll={false}
               className={styles['footer-link']}
               passHref
+              aria-label={item.label}
             >
               {item.label}
             </Link>
