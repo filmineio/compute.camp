@@ -12,6 +12,11 @@ const DescriptionSection: FC = () => (
       focus of the first iteration of the event will have a particular emphasis on web3 as
       Compute Camp started from the Filecoin & IPFS community, with the objective to
       spread the knowledge.
+      <br />
+      <br />
+      The focus of the first iteration of the event will have a particular emphasis on
+      web3 as Compute Camp started from the Filecoin & IPFS community, with the objective
+      to spread the knowledge.
     </p>
     <Illustration2 />
   </div>

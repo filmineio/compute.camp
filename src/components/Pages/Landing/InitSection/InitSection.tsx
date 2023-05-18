@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Illustration1 from 'components/Common/Icons/Illustration1';
+import Star from 'components/Common/Icons/Star';
 
 import styles from './InitSection.module.scss';
 
@@ -10,12 +11,16 @@ const InitSection: FC = () => (
       <h1>
         A gathering of compute science enthusiasts innovating in the different computing
       </h1>
-      <button type="button" className="button primary">
-        Submit a Talk
-      </button>
-      <button type="button" className="button secondary">
-        Get Tickets Now
-      </button>
+      <div className={styles['buttons-wrapper']}>
+        <button type="button" className="button primary">
+          Submit a Talk
+          <Star />
+        </button>
+        <button type="button" className="button secondary">
+          Get Tickets Now
+          <Star />
+        </button>
+      </div>
     </div>
     <div className={styles['init-section-illustration']}>
       <Illustration1 />
