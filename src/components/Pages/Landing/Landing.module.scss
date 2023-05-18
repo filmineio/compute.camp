@@ -1,5 +1,17 @@
 .landing-wrapper {
-  .landing-content {
 
+  &:before {
+    content: '';
+
+  }
+
+  &:after {
+    content: '';
+
+  }
+
+  .landing-content {
+    position: relative;
+    z-index: 1;
   }
 }

@@ -46,6 +46,16 @@
         font-size: 20px;
       }
     }
+
+    .label {
+      font-size: 18px;
+      margin-bottom: 7px;
+      font-weight: 700;
+    }
+
+    .author {
+      margin-bottom: 0;
+    }
   }
 
   .divider {
@@ -65,13 +75,14 @@
 
     h5 {
       font-family: 'Inter', sans-serif;
-      margin-bottom: 15px;
+      margin-bottom: 22px;
       font-weight: 700;
     }
 
     p {
       font-size: 20px;
       margin-bottom: 0;
+      line-height: 29px;
     }
   }
 }

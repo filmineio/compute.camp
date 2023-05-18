@@ -15,7 +15,7 @@ export const FOOTER_SOCIALS = [
   },
 ];
 
-export const SCHEDULE = [
+export const SCHEDULE_DAY_1 = [
   {
     type: 'Talks',
     time: '09:00 - 9:40',
@@ -52,6 +52,18 @@ export const SCHEDULE = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
   },
+];
+
+export const SCHEDULE_DAY_2 = [
+  {
+    type: 'Talks',
+    time: '09:00 - 9:40',
+    label: 'Welcome Talk ',
+    author: 'John Evens',
+    title: 'Opening Ceremony and Introduce the Event.',
+    description:
+      'Lorem ipsum dolor sit amet, con ante venenatis dapibus posuere velit aliquet.',
+  },
   {
     type: 'Break',
     time: '09:00 - 9:40',
@@ -59,7 +71,7 @@ export const SCHEDULE = [
     author: 'John Evens',
     title: 'Opening Ceremony and Introduce the Event.',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dm ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
   },
   {
     type: 'Workshop',
@@ -67,7 +79,6 @@ export const SCHEDULE = [
     label: 'Welcome Talk ',
     author: 'John Evens',
     title: 'Opening Ceremony and Introduce the Event.',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscinget.',
   },
 ];
