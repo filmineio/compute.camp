@@ -6,6 +6,7 @@ import ParticipantsSingleParticipant from './ParticipantsSingleParticipant/Parti
 import cubes from '../../../Common/images/cubes.svg';
 
 import styles from './Participants.module.scss';
+import Link from "next/link";
 
 const Participants: FC = () => {
   return (
@@ -45,10 +46,9 @@ const Participants: FC = () => {
             <div className={styles['participants-contact-text']}>
               Want to speak on our event?
             </div>
-
-            <button type="button" className="button primary">
-              CONTACT US!
-            </button>
+            <Link href="mailto:info@compute.camp" className="button primary">
+              Contact Us!
+            </Link>
             <Image className={styles['cubes-image']} src={cubes} alt="cubes" />
           </div>
         </div>
