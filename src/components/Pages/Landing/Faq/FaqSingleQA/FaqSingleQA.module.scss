@@ -33,14 +33,26 @@
   }
 
   .qa-section-single-qa-answer-wrapper {
-    will-change: opacity, height;
+    will-change: height;
     overflow: hidden;
+    transition: height 400ms ease-in-out;
 
     .qa-section-single-qa-answer-content {
       font-size: 24px;
       font-weight: 400;
       line-height: 42px;
       max-width: 970px;
+      margin-top: 20px;
+
+      ul {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        a {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
     }
   }
 

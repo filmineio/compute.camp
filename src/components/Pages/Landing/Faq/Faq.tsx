@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, ReactElement, useState } from 'react';
 import Image from 'next/image';
 import { FaqSingleQA } from './FaqSingleQA/FaqSingleQA';
 import { FAQ } from '../../../../constants/general';
@@ -9,14 +9,14 @@ import styles from './Faq.module.scss';
 
 export type qaProps = {
   question: string;
-  answer: string;
+  answer: string | ReactElement;
 };
 
 export const Faq: FC = () => {
   const [openQAIndex, setOpenQAIndex] = useState(-1);
 
   return (
-    <div className={styles['faq-wrapper']}>
+    <div id="faq" className={styles['faq-wrapper']}>
       <h1 className={styles.title}>FAQ</h1>
 
       <div className={styles['faq-content']}>

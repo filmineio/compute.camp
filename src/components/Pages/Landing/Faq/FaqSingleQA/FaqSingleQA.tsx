@@ -1,7 +1,8 @@
-import { Dispatch, FC, SetStateAction, useCallback, useMemo } from 'react';
-import { useSpring, a } from 'react-spring';
+import { Dispatch, FC, SetStateAction, useCallback, useMemo, useRef } from 'react';
+// import { useSpring, a } from 'react-spring';
+// import { string } from 'yup';
 import { qaProps } from '../Faq';
-import { useMeasure } from '../useMeasure';
+// import { useMeasure } from '../useMeasure';
 import Arrow from '../../../../Common/Icons/Arrow/Arrow';
 
 import styles from './FaqSingleQA.module.scss';
@@ -15,6 +16,7 @@ type Props = {
 
 export const FaqSingleQA: FC<Props> = ({ qa, index, openQAIndex, setOpenQAIndex }) => {
   const isOpen = useMemo(() => index === openQAIndex, [index, openQAIndex]);
+  const contentEl = useRef<HTMLDivElement>(null);
   const setOpenQAIndexCallback = useCallback(
     () => setOpenQAIndex(isOpen ? -1 : index),
     [isOpen, setOpenQAIndex, index],
@@ -22,19 +24,22 @@ export const FaqSingleQA: FC<Props> = ({ qa, index, openQAIndex, setOpenQAIndex 
 
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-  const [bind, { height: viewHeight }] = useMeasure();
-  const { height, opacity, marginTop } = useSpring({
-    from: { height: 0, opacity: 0, marginTop: 0 },
-    to: {
-      height: isOpen ? viewHeight : 0,
-      opacity: isOpen ? 1 : 0,
-      marginTop: isOpen ? 20 : 0,
-    },
-  });
+  // const [bind, { height: viewHeight }] = useMeasure();
+  // const { height, opacity, marginTop } = useSpring({
+  //   from: { height: 0, opacity: 0, marginTop: 0 },
+  //   to: {
+  //     height: isOpen ? viewHeight : 0,
+  //     opacity: isOpen ? 1 : 0,
+  //     marginTop: isOpen ? 20 : 0,
+  //   },
+  // });
 
   return (
-    <div className={styles['faq-single-qa-wrapper']} onClick={setOpenQAIndexCallback}>
-      <div className={styles['qa-section-single-qa-visible-wrapper']}>
+    <div className={styles['faq-single-qa-wrapper']}>
+      <div
+        className={styles['qa-section-single-qa-visible-wrapper']}
+        onClick={setOpenQAIndexCallback}
+      >
         <div className={styles['qa-section-single-qa-visible-question']}>
           {qa.question}
         </div>
@@ -42,16 +47,17 @@ export const FaqSingleQA: FC<Props> = ({ qa, index, openQAIndex, setOpenQAIndex 
         {isOpen ? <Arrow rotate /> : <Arrow />}
       </div>
 
-      <a.div
+      <div
         className={styles['qa-section-single-qa-answer-wrapper']}
-        style={{ height, opacity, marginTop }}
+        // style={{ (typeof qa.answer) === string ? height : height: height + 30, opacity, marginTop }}
+        ref={contentEl}
+        style={isOpen ? { height: contentEl?.current?.scrollHeight } : { height: '0px' }}
       >
         {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
         {/* @ts-ignore */}
-        <div className={styles['qa-section-single-qa-answer-content']} {...bind}>
-          {qa.answer}
-        </div>
-      </a.div>
+        {/* <div className={styles['qa-section-single-qa-answer-content']} {...bind}> */}
+        <div className={styles['qa-section-single-qa-answer-content']}>{qa.answer}</div>
+      </div>
     </div>
   );
 };

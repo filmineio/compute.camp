@@ -135,13 +135,13 @@ button {
 }
 
 a {
-  color: var(--green-500);
+  color: #512BDA;
   text-decoration: none;
   transition: all 200ms;
 
   &:hover {
     text-decoration: none;
-    color: var(--green-500);
+    color: #512BDA;
   }
 }
 
