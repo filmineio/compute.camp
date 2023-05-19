@@ -4,4 +4,12 @@
   font-weight: 600;
   color: #2858FF;
   margin-bottom: 30px;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 35px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 30px;
+  }
 }

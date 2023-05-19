@@ -8,17 +8,37 @@
     line-height: 38px;
     margin-bottom: 70px;
     color: #2858FF;
+
+    @media only screen and (max-width: 500px) {
+      font-size: 18px;
+    }
   }
 
   .participants-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 560px);
+    grid-template-columns: 1fr 1fr;
     grid-gap: 45px 98px;
+
+    @media only screen and (max-width: 1150px) {
+      grid-gap: 30px 40px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      grid-template-columns: 1fr;
+    }
 
     .participants-contact-us {
       border: 1px solid #FF018A;
       border-top-right-radius: 9px;
       border-top-left-radius: 9px;
+
+      @media only screen and (max-width: 1150px) {
+        overflow: hidden;
+      }
+
+      @media only screen and (max-width: 550px) {
+        overflow: visible;
+      }
 
       .participants-contact-window-header {
         background: #FFEEEB;
@@ -52,6 +72,10 @@
         max-height: 268px;
         padding: 50px;
 
+        @media only screen and (max-width: 1150px) {
+          max-height: 100%;
+        }
+
         .participants-contact-text {
           color: #FF018A;
           font-size: 32px;
@@ -69,6 +93,18 @@
           position: absolute;
           right: 0;
           bottom: -45px;
+
+          @media only screen and (max-width: 1150px) {
+            width: 200px;
+            bottom: 0;
+          }
+
+          @media only screen and (max-width: 550px) {
+            width: 140px;
+            bottom: -40px;
+            right: -20px;
+            height: fit-content;
+          }
         }
       }
     }

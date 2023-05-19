@@ -1,8 +1,16 @@
 .sponsors-wrapper {
   margin-bottom: 100px;
 
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 70px;
+  }
+
   .sponsors-content {
     display: flex;
+
+    @media only screen and (max-width: 1150px) {
+      flex-direction: column;
+    }
 
     .sponsors-text {
       font-size: 22px;
@@ -11,6 +19,16 @@
       max-width: 450px;
       margin-right: 45px;
       line-height: 38px;
+
+      @media only screen and (max-width: 1150px) {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 45px;
+      }
+
+      @media only screen and (max-width: 500px) {
+        font-size: 18px;
+      }
     }
 
     .sponsors-logos {
@@ -25,6 +43,17 @@
         &:first-child { margin-bottom: 35px; }
 
         img:not(:last-child) { margin-right: 35px; }
+
+        @media only screen and (max-width: 800px) {
+          flex-direction: column;
+
+          &:first-child { margin-bottom: 20px; }
+
+          img:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+        }
       }
     }
   }

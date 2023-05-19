@@ -32,9 +32,15 @@
     padding: 30px 28px 36px 35px;
     display: flex;
 
+    @media only screen and (max-width: 530px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .participants-single-participant-content-image {
       margin-right: 38px;
       position: relative;
+      max-height: 202px;
 
       .participant-image {
         position: absolute;
@@ -46,6 +52,11 @@
     .participants-single-participant-info {
       display: flex;
       flex-direction: column;
+
+      @media only screen and (max-width: 530px) {
+        align-items: center;
+        text-align: center;
+      }
 
       .participants-single-participant-name {
         font-family: 'Inter', sans-serif;
@@ -72,6 +83,16 @@
         display: flex;
 
         a:not(:last-child) { margin-right: 15px; }
+
+        svg {
+          &:hover {
+            cursor: pointer;
+            path {
+              transition: all 200ms ease-in-out;
+              fill: lighten(#2858FF, 20);
+            }
+          }
+        }
       }
     }
   }
