@@ -10,7 +10,7 @@ type Props = {
 };
 
 const SeoHeader: FC<Props> = ({ title, description, link, metaImageLink }) => {
-  const siteName = 'web3mine staking pool';
+  const siteName = 'Compute Camp';
 
   return (
     <Head>

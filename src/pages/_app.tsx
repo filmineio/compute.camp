@@ -9,9 +9,8 @@ import '../styles/style.scss';
 // TODO remove this comment
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
-  const title = 'Stake with web3mine';
-  const description =
-    'Earn the highest yields by staking into the best storage providers in Filecoin ecosystem.';
+  const title = 'Compute Camp';
+  const description = 'Yearly gathering of web3 compute enthusiasts';
   const link = `${process.env.NEXT_PUBLIC_BASE_URL}`;
 
   return (
