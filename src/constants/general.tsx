@@ -52,7 +52,7 @@ export const FOOTER_LINKS = [
   },
   {
     label: 'About Belgrade',
-    url: '#',
+    url: '#about-belgrade',
     targetBlank: false,
   },
   {
@@ -143,7 +143,7 @@ export const MENU_ITEMS = [
   },
   {
     label: 'About Belgrade',
-    url: '#',
+    url: '#about-belgrade',
     targetBlank: false,
   },
   {

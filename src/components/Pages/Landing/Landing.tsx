@@ -6,6 +6,7 @@ import DescriptionSection from './DescriptionSection/DescriptionSection';
 import ScheduleSection from './ScheduleSection/ScheduleSection';
 import Sponsors from './Sponsors/Sponsors';
 import Participants from './Participants/Participants';
+import AboutBelgradeSection from './AboutBelgradeSection/AboutBelgradeSection';
 import { Faq } from './Faq/Faq';
 
 import styles from './Landing.module.scss';
@@ -23,6 +24,7 @@ const Landing: FC = () => {
         <ScheduleSection />
         <Sponsors />
         <Participants />
+        <AboutBelgradeSection />
         <Faq />
       </div>
     </div>
