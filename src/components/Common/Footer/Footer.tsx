@@ -49,15 +49,30 @@ const Footer: FC = () => {
           </div>
 
           <div className={styles.links}>
-            <Link className={styles['bottom-link']} href="" passHref>
+            <Link
+              className={styles['bottom-link']}
+              href="https://discuss.ipfs.tech/tos"
+              target="_blank"
+              passHref
+            >
               Terms
             </Link>
 
-            <Link className={styles['bottom-link']} href="" passHref>
+            <Link
+              className={styles['bottom-link']}
+              href="https://discuss.ipfs.tech/privacy"
+              target="_blank"
+              passHref
+            >
               Privacy
             </Link>
 
-            <Link className={styles['bottom-link']} href="" passHref>
+            <Link
+              className={styles['bottom-link']}
+              href="https://ipfs.tech/legal/"
+              target="_blank"
+              passHref
+            >
               DMCA
             </Link>
           </div>

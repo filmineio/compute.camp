@@ -1,6 +1,8 @@
 import { FC } from 'react';
 import Image from 'next/image';
-import SectionTitle from '../../../Common/SectionTitle/SectionTitle';
+import SectionTitle from 'components/Common/SectionTitle/SectionTitle';
+import LogoWeb3mine from 'components/Common/Icons/LogoWeb3mine';
+import LogoPL from 'components/Common/Icons/LogoPL';
 import templateLogo from './logos/sponsors-template-logo.png';
 
 import styles from './Sponsors.module.scss';
@@ -19,8 +21,8 @@ const Sponsors: FC = () => {
 
         <div className={styles['sponsors-logos']}>
           <div className={styles.logos}>
-            <Image src={templateLogo} alt="templateLogo" />
-            <Image src={templateLogo} alt="templateLogo" />
+            <LogoWeb3mine />
+            <LogoPL />
             <Image src={templateLogo} alt="templateLogo" />
           </div>
 

@@ -26,11 +26,11 @@ export const FOOTER_SOCIALS = [
 ];
 
 export const FOOTER_LINKS = [
-  {
-    label: 'About',
-    url: '#',
-    targetBlank: false,
-  },
+  // {
+  //   label: 'About',
+  //   url: '#',
+  //   targetBlank: false,
+  // },
   {
     label: 'Registration',
     url: 'http://lu.ma/compute-camp',

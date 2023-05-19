@@ -42,16 +42,22 @@
 
         &:first-child { margin-bottom: 35px; }
 
-        img:not(:last-child) { margin-right: 35px; }
+        img,
+        svg {
+          &:not(:last-child) { margin-right: 35px; }
+        }
 
         @media only screen and (max-width: 800px) {
           flex-direction: column;
 
           &:first-child { margin-bottom: 20px; }
 
-          img:not(:last-child) {
-            margin-right: 0;
-            margin-bottom: 20px;
+          img,
+          svg {
+            &:not(:last-child) {
+              margin-right: 0;
+              margin-bottom: 20px;
+            }
           }
         }
       }
