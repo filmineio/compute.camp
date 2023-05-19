@@ -219,7 +219,7 @@ input::-webkit-credentials-auto-fill-button {
 .button {
   font-family: 'Conthrax SemiBold', sans-serif;
   margin: 0;
-  padding: 17px 11px;
+  padding: 17px 15px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
@@ -233,6 +233,7 @@ input::-webkit-credentials-auto-fill-button {
   justify-content: center;
   background: linear-gradient(90deg, #FF008A 9.46%, #EF8E65 89.34%);
   border: 1px solid #FFFFFF;
+  min-width: 190px;
 
   &:hover:not(:disabled) {
     //box-shadow: 0 0 0 4px var(--green-500_opacity-20);
