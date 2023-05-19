@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { PARTICIPANTS } from '../../../../constants/general';
 import SectionTitle from '../../../Common/SectionTitle/SectionTitle';
 import ParticipantsSingleParticipant from './ParticipantsSingleParticipant/ParticipantsSingleParticipant';
 import cubes from '../../../Common/images/cubes.svg';
 
 import styles from './Participants.module.scss';
-import Link from "next/link";
 
 const Participants: FC = () => {
   return (
