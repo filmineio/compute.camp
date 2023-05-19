@@ -18,10 +18,7 @@ const SeoHeader: FC<Props> = ({ title, description, link, metaImageLink }) => {
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="author" content="web3mine" />
-      <meta
-        name="keywords"
-        content="blockchain, crypto, cryptocurrency, explorer, filecoin, filecoin ecosystem, filecoin mining, filecoin sealing, filecoin storage, fil, filmine, liquid staking, proof of work, staking, sealing as a service, storage providers, smart contracts, tokenomics, tvl, total value locked, wallet, web3mine, Yield farming"
-      />
+      <meta name="keywords" content="compute, camp" />
       <meta name="theme-color" content="#000000" />
       <meta name="title" content={title} key="metaTitle" />
       <meta name="description" content={description} key="metaDescription" />
