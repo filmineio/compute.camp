@@ -243,7 +243,7 @@ export const FAQ = [
         </li>
         <li>
           Volunteer: If you&apos;re interested in volunteering at this event, please email
-          us at info@compute.camp.
+          us at <Link href="mailto:info@compute.camp">info@compute.camp</Link>.
         </li>
         <li>
           Spread the Good Word: Let everyone know how excited you are about Compute Camp.
@@ -285,7 +285,11 @@ export const FAQ = [
   },
   {
     question: 'How do I contact the organizers?',
-    answer: 'You can reach us at info@compute.camp',
+    answer: (
+      <>
+        You can reach us at <Link href="mailto:info@compute.camp">info@compute.camp</Link>
+      </>
+    ),
   },
   {
     question: 'What is the Covid-19 policy?',

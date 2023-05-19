@@ -17,7 +17,7 @@ export const Faq: FC = () => {
 
   return (
     <div id="faq" className={styles['faq-wrapper']}>
-      <h1 className={styles.title}>FAQ</h1>
+      <h2 className={styles.title}>FAQ</h2>
 
       <div className={styles['faq-content']}>
         {FAQ.map((qa: qaProps, index) => (
