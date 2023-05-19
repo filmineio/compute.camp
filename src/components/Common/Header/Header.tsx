@@ -53,6 +53,7 @@ const Header: FC = () => {
                 [styles.active]: pathname === item.url,
               })}
               passHref
+              target={item.targetBlank ? '_blank' : '_self'}
             >
               {item.label}
               <MenuItemActive />

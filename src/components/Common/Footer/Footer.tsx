@@ -24,6 +24,7 @@ const Footer: FC = () => {
               className={styles['footer-link']}
               passHref
               aria-label={item.label}
+              target={item.targetBlank ? '_blank' : '_self'}
             >
               {item.label}
             </Link>

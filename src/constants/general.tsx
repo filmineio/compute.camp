@@ -28,30 +28,37 @@ export const FOOTER_LINKS = [
   {
     label: 'About',
     url: '#',
+    targetBlank: false,
   },
   {
     label: 'Registration',
     url: 'http://lu.ma/compute-camp',
+    targetBlank: true,
   },
   {
     label: 'Tickets',
     url: 'https://protocollabs.notion.site/fadc9a37763844769a13ee87234b90f8',
+    targetBlank: true,
   },
   {
     label: 'Schedule',
     url: '#schedule',
+    targetBlank: false,
   },
   {
     label: 'Participants',
     url: '#participants',
+    targetBlank: false,
   },
   {
     label: 'About Belgrade',
     url: '#',
+    targetBlank: false,
   },
   {
     label: 'FAQ',
     url: '#faq',
+    targetBlank: false,
   },
 ];
 
@@ -127,18 +134,22 @@ export const MENU_ITEMS = [
   {
     label: 'Registration',
     url: 'http://lu.ma/compute-camp',
+    targetBlank: true,
   },
   {
     label: 'Schedule',
     url: '#schedule',
+    targetBlank: false,
   },
   {
     label: 'About Belgrade',
     url: '#',
+    targetBlank: false,
   },
   {
     label: 'Participants',
     url: '#participants',
+    targetBlank: false,
   },
 ];
 
