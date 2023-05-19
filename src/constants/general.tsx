@@ -4,7 +4,8 @@ import Github from '../components/Common/Icons/Github';
 import Twitter from '../components/Common/Icons/Twitter';
 import YouTube from '../components/Common/Icons/YouTube';
 
-export const META_IMAGE_LINK_FILMINE = '';
+export const META_IMAGE_LINK =
+  'https://compute-camp.vercel.app/static/compute-camp-meta.jpg';
 
 export const FOOTER_SOCIALS = [
   {
@@ -213,9 +214,13 @@ export const FAQ = [
   //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit. consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit.',
   // },
   {
-    question: 'Why isn’t this event free?',
+    question: 'How is it different than IPFS Thing?',
+    answer: 'Compute Camp focus is to gather place for newcomers to the ecosystem.',
+  },
+  {
+    question: 'Who is it for?',
     answer:
-      'Along with our sponsors, your small contribution helps make this event possible.',
+      'Compute Camp is for all CS enthusiasts, from database builders, cloud veterans or ',
   },
   {
     question: 'Are there any preferred hotels?',

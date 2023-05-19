@@ -6,8 +6,6 @@ import Footer from 'components/Common/Footer/Footer';
 
 import '../styles/style.scss';
 
-// TODO remove this comment
-
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   const title = 'Compute Camp';
   const description = 'Yearly gathering of web3 compute enthusiasts';

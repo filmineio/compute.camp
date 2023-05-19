@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Head from 'next/head';
-import { META_IMAGE_LINK_FILMINE } from 'constants/general';
+import { META_IMAGE_LINK } from 'constants/general';
 
 type Props = {
   title: string;
@@ -33,7 +33,7 @@ const SeoHeader: FC<Props> = ({ title, description, link, metaImageLink }) => {
       <meta property="og:site_name" content={siteName} />
       <meta
         property="og:image"
-        content={metaImageLink || META_IMAGE_LINK_FILMINE}
+        content={metaImageLink || META_IMAGE_LINK}
         key="metaOGImage"
       />
 
@@ -42,7 +42,7 @@ const SeoHeader: FC<Props> = ({ title, description, link, metaImageLink }) => {
       <meta property="twitter:title" content={title} key="metaTwitterTitle" />
       <meta
         property="twitter:image"
-        content={metaImageLink || META_IMAGE_LINK_FILMINE}
+        content={metaImageLink || META_IMAGE_LINK}
         key="metaTwitterImage"
       />
       <meta
@@ -52,10 +52,7 @@ const SeoHeader: FC<Props> = ({ title, description, link, metaImageLink }) => {
       />
       <meta property="linkedin:title" content={title} />
       <meta property="linkedin:description" content={description} />
-      <meta
-        property="linkedin:image"
-        content={metaImageLink || META_IMAGE_LINK_FILMINE}
-      />
+      <meta property="linkedin:image" content={metaImageLink || META_IMAGE_LINK} />
       <meta property="linkedin:site_name" content={siteName} />
       <meta property="linkedin:type" content="website" />
     </Head>
