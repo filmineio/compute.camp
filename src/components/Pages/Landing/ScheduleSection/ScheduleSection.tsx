@@ -15,6 +15,18 @@ const ScheduleSection: FC = () => {
     forceUpdate();
   }, []);
 
+  useEffect(() => {
+    const listener = () => {
+      window.addEventListener('resize', () => {
+        forceUpdate();
+      });
+    };
+
+    listener();
+
+    return () => listener();
+  }, []);
+
   return (
     <div id="schedule" className={styles['schedule-section-wrapper']}>
       <h2>Schedule</h2>
@@ -53,8 +65,8 @@ const ScheduleSection: FC = () => {
         ref={contentEl1}
         style={
           isFirstDayActive
-            ? { height: contentEl1?.current?.scrollHeight }
-            : { height: '0px' }
+            ? { maxHeight: contentEl1?.current?.scrollHeight }
+            : { maxHeight: '0px' }
         }
       >
         {SCHEDULE_DAY_1.map((item) => (
@@ -68,8 +80,8 @@ const ScheduleSection: FC = () => {
         ref={contentEl2}
         style={
           !isFirstDayActive
-            ? { height: contentEl2?.current?.scrollHeight }
-            : { height: '0px' }
+            ? { maxHeight: contentEl2?.current?.scrollHeight }
+            : { maxHeight: '0px' }
         }
       >
         {SCHEDULE_DAY_2.map((item) => (
