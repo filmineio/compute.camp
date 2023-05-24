@@ -16,9 +16,9 @@ const Sponsors: FC = () => {
 
       <div className={styles['sponsors-content']}>
         <div className={styles['sponsors-text']}>
-          Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean
-          lacinia bibendum nulla sed consectetur.
+          Thanks to the visionary support of industry leaders like Protocol Labs, Fluence,
+          IPFS, and other innovative companies, Compute Camp becomes a reality, fostering
+          collaboration and driving advancements in the blockchain space.
         </div>
 
         <div className={styles['sponsors-logos']}>

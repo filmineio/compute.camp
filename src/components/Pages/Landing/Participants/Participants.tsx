@@ -14,9 +14,9 @@ const Participants: FC = () => {
       <SectionTitle title="Participants" />
 
       <div className={styles['participants-text']}>
-        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia
-        bibendum nulla sed consectetur.
+        Get ready to gain invaluable insights from esteemed speakers representing Protocol
+        Labs, Web3Mine, Fluence, and more at Compute Camp. Explore cutting-edge solutions
+        in the web3 domain and be inspired by their expertise and vision.
       </div>
 
       <div className={styles['participants-content']}>
