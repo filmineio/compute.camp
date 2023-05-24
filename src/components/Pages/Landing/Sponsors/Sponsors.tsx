@@ -4,7 +4,8 @@ import SectionTitle from 'components/Common/SectionTitle/SectionTitle';
 import LogoWeb3mine from 'components/Common/Icons/LogoWeb3mine';
 import LogoPL from 'components/Common/Icons/LogoPL';
 import LogoFluence from 'components/Common/Icons/LogoFluence';
-import templateLogo from './logos/sponsors-template-logo.png';
+import LogoIPFS from 'components/Common/Icons/LogoIPFS';
+import ipfsLogo from './logos/ipfs-logo.png';
 
 import styles from './Sponsors.module.scss';
 
@@ -22,14 +23,14 @@ const Sponsors: FC = () => {
 
         <div className={styles['sponsors-logos']}>
           <div className={styles.logos}>
-            <LogoWeb3mine />
             <LogoPL />
+            <LogoWeb3mine />
             <LogoFluence />
           </div>
 
           <div className={styles.logos}>
-            <Image src={templateLogo} alt="templateLogo" />
-            <Image src={templateLogo} alt="templateLogo" />
+            <LogoIPFS />
+            <Image src={ipfsLogo} width="206" height="83" alt="templateLogo" />
           </div>
         </div>
       </div>

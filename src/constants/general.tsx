@@ -1,28 +1,32 @@
 import Link from 'next/link';
-import participant from '../components/Common/images/paticipant.png';
-import Github from '../components/Common/Icons/Github';
+// import p0 from '../components/Common/images/p0.png';
+import p1 from '../components/Common/images/p1.png';
+import p2 from '../components/Common/images/p2.png';
+import p3 from '../components/Common/images/p3.png';
+import p4 from '../components/Common/images/p4.png';
+// import Github from '../components/Common/Icons/Github';
 import Twitter from '../components/Common/Icons/Twitter';
-import YouTube from '../components/Common/Icons/YouTube';
+// import YouTube from '../components/Common/Icons/YouTube';
 
 export const META_IMAGE_LINK =
   'https://compute-camp.vercel.app/static/compute-camp-meta.jpg';
 
 export const FOOTER_SOCIALS = [
-  {
-    alt: 'Github',
-    url: 'https://github.com',
-    Icon: Github,
-  },
+  // {
+  //   alt: 'Github',
+  //   url: 'https://github.com',
+  //   Icon: Github,
+  // },
   {
     alt: 'Twitter',
-    url: 'https://twitter.com',
+    url: 'https://twitter.com/computecamp',
     Icon: Twitter,
   },
-  {
-    alt: 'Youtube',
-    url: 'https://youtube.com',
-    Icon: YouTube,
-  },
+  // {
+  //   alt: 'Youtube',
+  //   url: 'https://youtube.com',
+  //   Icon: YouTube,
+  // },
 ];
 
 export const FOOTER_LINKS = [
@@ -156,55 +160,51 @@ export const MENU_ITEMS = [
 
 export const PARTICIPANTS = [
   {
-    name: 'Speaker Name',
-    image: participant,
-    company: 'Company',
-    about:
-      'Praesent commodo its cursus magna, vel scetret gravida at set eget metus. Donec id elit non mi porta gravida at eget metus.',
-    github: 'https://github.com/',
-    twitter: 'https://twitter.com/?lang=sr',
-    linkedIn: 'https://www.linkedin.com/',
+    name: 'Evgeny Ponomarev',
+    image: p2,
+    company: 'Fluence Project',
+    about: 'Co-founder at Fluence Project',
+    // github: 'https://github.com/',
+    twitter: 'https://twitter.com/eponomarev',
+    // linkedIn: 'https://www.linkedin.com/',
   },
   {
-    name: 'Speaker Name',
-    image: participant,
-    company: 'Company',
-    about:
-      'Praesent commodo its cursus magna, vel scetret gravida at set eget metus. Donec id elit non mi porta gravida at eget metus.',
-    github: 'https://github.com/',
-    twitter: 'https://twitter.com/?lang=sr',
-    linkedIn: 'https://www.linkedin.com/',
+    name: 'Vukašin Vukoje',
+    image: p4,
+    company: 'web3mine',
+    about: 'web3 infrastructure',
+    // github: 'https://github.com/',
+    // twitter: 'https://twitter.com/?lang=sr',
+    linkedIn: 'https://www.linkedin.com/in/vvkio/',
   },
   {
-    name: 'Speaker Name',
-    image: participant,
-    company: 'Company',
-    about:
-      'Praesent commodo its cursus magna, vel scetret gravida at set eget metus. Donec id elit non mi porta gravida at eget metus.',
-    github: 'https://github.com/',
-    twitter: 'https://twitter.com/?lang=sr',
-    linkedIn: 'https://www.linkedin.com/',
+    name: 'Vik K.',
+    image: p3,
+    company: 'Protocol Labs',
+    about: 'Cryptoeconomics Research',
+    // github: 'https://github.com/',
+    // twitter: 'https://twitter.com/?lang=sr',
+    linkedIn: 'https://www.linkedin.com/in/vik-k-b99a4a153',
   },
   {
-    name: 'Speaker Name',
-    image: participant,
-    company: 'Company',
-    about:
-      'Praesent commodo its cursus magna, vel scetret gravida at set eget metus. Donec id elit non mi porta gravida at eget metus.',
-    github: 'https://github.com/',
-    twitter: 'https://twitter.com/?lang=sr',
-    linkedIn: 'https://www.linkedin.com/',
+    name: 'Joshua Bate',
+    image: p1,
+    company: 'Spool DAO',
+    about: 'DeFi / DeSci Guy',
+    // github: 'https://github.com/',
+    // twitter: 'https://twitter.com/?lang=sr',
+    linkedIn: 'https://www.linkedin.com/in/joshua-bate/',
   },
-  {
-    name: 'Speaker Name',
-    image: participant,
-    company: 'Company',
-    about:
-      'Praesent commodo its cursus magna, vel scetret gravida at set eget metus. Donec id elit non mi porta gravida at eget metus.',
-    github: 'https://github.com/',
-    twitter: 'https://twitter.com/?lang=sr',
-    linkedIn: 'https://www.linkedin.com/',
-  },
+  // {
+  //   name: 'Speaker Name',
+  //   image: p0,
+  //   company: 'Company',
+  //   about:
+  //     'Praesent commodo its cursus magna, vel scetret gravida at set eget metus. Donec id elit non mi porta gravida at eget metus.',
+  //   github: 'https://github.com/',
+  //   twitter: 'https://twitter.com/?lang=sr',
+  //   linkedIn: 'https://www.linkedin.com/',
+  // },
 ];
 
 export const FAQ = [

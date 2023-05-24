@@ -7,8 +7,11 @@ const AboutBelgradeSection: FC = () => (
     <h2>About Belgrade</h2>
     <div className={styles['about-belgrade-section-content']}>
       <p>
-        Lorem ipsum dolore smith lorem ipsum dolore smith lorem ipsum dolore smith lorem
-        ipsum dolore smith lorem ipsum dolore smith
+        Discover Belgrade, Serbia’s captivating capital where history and innovation
+        converge. Immerse yourself in its rich culture, indulge in delectable cuisine, and
+        experience the dynamic blend of modernity and tradition. Join us at Compute Camp,
+        the exciting blockchain conference, and shape the future of technology in this
+        vibrant city.
       </p>
     </div>
   </div>

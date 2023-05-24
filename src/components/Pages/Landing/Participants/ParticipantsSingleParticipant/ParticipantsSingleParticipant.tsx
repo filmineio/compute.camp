@@ -13,9 +13,9 @@ type ParticipantProps = {
   name: string;
   company: string;
   about: string;
-  github: string;
-  twitter: string;
-  linkedIn: string;
+  github?: string;
+  twitter?: string;
+  linkedIn?: string;
 };
 
 const ParticipantsSingleParticipant: FC<ParticipantProps> = ({
@@ -58,19 +58,27 @@ const ParticipantsSingleParticipant: FC<ParticipantProps> = ({
           </div>
           <div className={styles['participants-single-participant-about']}>{about}</div>
 
-          <div className={styles['participants-single-participant-socials']}>
-            <Link href={github} target="_blank" passHref aria-label="Github">
-              <Github />
-            </Link>
+          {(github || twitter || linkedIn) && (
+            <div className={styles['participants-single-participant-socials']}>
+              {github && (
+                <Link href={github} target="_blank" passHref aria-label="Github">
+                  <Github />
+                </Link>
+              )}
 
-            <Link href={twitter} target="_blank" passHref aria-label="Twitter">
-              <Twitter />
-            </Link>
+              {twitter && (
+                <Link href={twitter} target="_blank" passHref aria-label="Twitter">
+                  <Twitter />
+                </Link>
+              )}
 
-            <Link href={linkedIn} target="_blank" passHref aria-label="LinkedIn">
-              <LinkedIn />
-            </Link>
-          </div>
+              {linkedIn && (
+                <Link href={linkedIn} target="_blank" passHref aria-label="LinkedIn">
+                  <LinkedIn />
+                </Link>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>

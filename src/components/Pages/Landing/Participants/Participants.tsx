@@ -21,6 +21,7 @@ const Participants: FC = () => {
 
       <div className={styles['participants-content']}>
         {PARTICIPANTS.map(
+          // @ts-ignore
           ({ name, image, company, about, github, twitter, linkedIn }, index) => (
             <ParticipantsSingleParticipant
               key={index}
