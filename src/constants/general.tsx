@@ -233,10 +233,7 @@ export const FAQ = [
       <ul>
         <li>
           Speak:{' '}
-          <Link
-            href="https://airtable.com/shrSfIQgLi8fF6zq5"
-            target="_blank"
-          >
+          <Link href="https://airtable.com/shrSfIQgLi8fF6zq5" target="_blank">
             Submit your talk here
           </Link>
           .
