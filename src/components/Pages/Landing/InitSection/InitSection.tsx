@@ -14,7 +14,7 @@ const InitSection: FC = () => (
       </h1>
       <div className={styles['buttons-wrapper']}>
         <Link
-          href="https://airtable.com/appKP5HuZ0xJMaVXf/tblbpqyZuCPTwi3vq/viwORKjKXkgRrngIy?blocks=hide"
+          href="https://airtable.com/shrSfIQgLi8fF6zq5"
           target="_blank"
           className="button primary"
           passHref
