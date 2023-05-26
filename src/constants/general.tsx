@@ -301,6 +301,7 @@ export const FAQ = [
           <Link
             href="https://docs.google.com/document/d/1rSzLZ9igZumUCt9hvYiBeYn54_m2PMM8/edit?usp=sharing&ouid=116293820701550843517&rtpof=true&sd=true"
             target="_blank"
+            aria-label="Event photo/video"
           >
             here
           </Link>
@@ -361,6 +362,7 @@ export const FAQ = [
           <Link
             href="https://docs.google.com/document/d/1TZtlV1nAVpvS0SS6Q8vmBz_fZ_Yow_dYyVCEvnbE9ss/edit?usp=sharing"
             target="_blank"
+            aria-label="General Liability"
           >
             General Liability
           </Link>
