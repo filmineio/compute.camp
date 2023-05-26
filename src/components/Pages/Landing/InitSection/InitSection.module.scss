@@ -31,6 +31,18 @@
       font-size: 26px;
       margin-bottom: 35px;
       line-height: 40px;
+
+      @media (max-width: 572px) {
+        min-height: 160px;
+      }
+
+      @media (max-width: 443px) {
+        min-height: 200px;
+      }
+
+      @media (max-width: 378px) {
+        min-height: 240px;
+      }
     }
 
     .buttons-wrapper {
