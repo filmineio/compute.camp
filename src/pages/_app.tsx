@@ -3,6 +3,7 @@ import { AppProps } from 'next/app';
 import SeoHeader from 'components/Common/SeoHeader/SeoHeader';
 import AppWrapper from 'components/AppWrapper/AppWrapper';
 import Footer from 'components/Common/Footer/Footer';
+import PostHog from 'components/PostHog/PostHog';
 
 import '../styles/style.scss';
 
@@ -15,6 +16,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
     <AppWrapper>
       <>
         <SeoHeader title={title} description={description} link={link} />
+        <PostHog />
         <Component {...pageProps} />
         <Footer />
       </>
