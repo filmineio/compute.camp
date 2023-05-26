@@ -146,30 +146,13 @@ export const SCHEDULE_DAY_1 = [
 
 export const SCHEDULE_DAY_2 = [
   {
-    type: 'Talks',
-    time: '09:00 - 9:40',
-    label: 'Welcome Talk ',
-    author: 'John Evens',
-    title: 'Opening Ceremony and Introduce the Event.',
-    description:
-      'Lorem ipsum dolor sit amet, con ante venenatis dapibus posuere velit aliquet.',
-  },
-  {
     type: 'Break',
-    time: '09:00 - 9:40',
-    label: 'Welcome Talk ',
-    author: 'John Evens',
-    title: 'Opening Ceremony and Introduce the Event.',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dm ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
-  },
-  {
-    type: 'Workshop',
-    time: '09:00 - 9:40',
-    label: 'Welcome Talk ',
-    author: 'John Evens',
-    title: 'Opening Ceremony and Introduce the Event.',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscinget.',
+    time: '8:00-9.30',
+    // label: 'Registration & Breakfast',
+    // author: 'John Evens',
+    title: 'Breakfast',
+    // description:
+    //   'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
   },
 ];
 
