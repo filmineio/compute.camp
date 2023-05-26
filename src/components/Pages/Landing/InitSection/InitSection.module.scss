@@ -40,8 +40,15 @@
         min-height: 200px;
       }
 
-      @media (max-width: 378px) {
-        min-height: 240px;
+      @media (max-width: 424px) {
+        font-size: 22px;
+        margin-bottom: 25px;
+        line-height: 35px;
+        min-height: 140px;
+      }
+
+      @media (max-width: 381px) {
+        min-height: 175px;
       }
     }
 
@@ -55,6 +62,7 @@
 
       a {
         padding-right: 15px;
+        justify-content: space-between;
 
         &:nth-child(1) {
           @media (min-width: 500px) {
