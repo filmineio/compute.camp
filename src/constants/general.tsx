@@ -146,7 +146,7 @@ export const SCHEDULE_DAY_1 = [
 
 export const SCHEDULE_DAY_2 = [
   {
-    type: 'Break',
+    type: 'Pre-session',
     time: '8:00-9.30',
     // label: 'Registration & Breakfast',
     // author: 'John Evens',
