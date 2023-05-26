@@ -63,6 +63,13 @@
 
           @media (max-width: 499px) {
             margin-bottom: 25px;
+            min-width: 190px;
+          }
+        }
+
+        &:nth-child(2) {
+          @media (max-width: 499px) {
+            min-width: 216px;
           }
         }
 
