@@ -67,42 +67,80 @@ export const FOOTER_LINKS = [
   },
 ];
 
+// 1.30-3 Lighting Talks
+// 3-5 Workshops
+// 5-7 Happy hour
 export const SCHEDULE_DAY_1 = [
   {
+    type: 'Intro',
+    time: '8:00-9.30',
+    // label: 'Registration & Breakfast',
+    // author: 'John Evens',
+    title: 'Registration & Breakfast',
+    // description:
+    //   'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
+  },
+  {
     type: 'Talks',
-    time: '09:00 - 9:40',
-    label: 'Welcome Talk ',
-    author: 'John Evens',
-    title: 'Opening Ceremony and Introduce the Event.',
+    time: '9.30-10:00',
+    // label: 'Opening Talk',
+    // author: 'John Evens',
+    title: 'Opening Talk',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
+      "Start your event experience on a high note with our engaging opening talk. This session will unveil the overarching theme, highlight the key objectives, and ignite your curiosity for what lies ahead. Don't miss this opportunity to be inspired and motivated from the very beginning.",
+  },
+  {
+    type: 'Talks',
+    time: '10:00-12.30',
+    // label: 'Keynotes',
+    // author: 'John Evens',
+    title: 'Keynotes',
+    description:
+      "Attention, forward-thinkers! Join us as we curate a lineup of industry's vanguards who will share their insights, experiences, and forecasts through captivating keynotes. Don't miss this chance to gain a competitive edge and steer your career towards success.",
   },
   {
     type: 'Break',
-    time: '09:00 - 9:40',
-    label: 'Welcome Talk ',
-    author: 'John Evens',
-    title: 'Opening Ceremony and Introduce the Event.',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
-  },
-  {
-    type: 'Workshop',
-    time: '09:00 - 9:40',
-    label: 'Welcome Talk ',
-    author: 'John Evens',
-    title: 'Opening Ceremony and Introduce the Event.',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
+    time: '12.30-1.30',
+    // label: 'Welcome Talk ',
+    // author: 'John Evens',
+    title: 'Lunch',
+    // description:
+    //   'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
   },
   {
     type: 'Talks',
-    time: '09:00 - 9:40',
-    label: 'Welcome Talk ',
-    author: 'John Evens',
-    title: 'Opening Ceremony and Introduce the Event.',
+    time: '1.30-3:00',
+    // label: 'Lighting Talks',
+    // author: 'John Evens',
+    title: 'Lighting Talks',
+    description: (
+      <>
+        Dive into the world of computing as we present a series of lightning talks that
+        will leave you inspired and informed.
+        <br /> An electrifying showcase of the latest and greatest in computing. Our
+        lightning talks will unveil the game-changing breakthroughs, emerging trends, and
+        transformative applications that are revolutionizing the industry. Join us to
+        witness the future unfold!
+      </>
+    ),
+  },
+  {
+    type: 'Workshop',
+    time: '3:00-5:00',
+    // label: 'Workshops',
+    // author: 'John Evens',
+    title: 'Workshops',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
+      'Looking to enhance your skill set and stay ahead of the competition? Our workshops offer a unique opportunity to learn directly from industry practitioners. Discover new methodologies, acquire valuable insights, and leave with actionable strategies that will accelerate your path.',
+  },
+  {
+    type: 'Talks',
+    time: '5:00-7:00',
+    // label: 'Welcome Talk',
+    // author: 'John Evens',
+    title: 'Happy hour',
+    // description:
+    //   'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
   },
 ];
 
