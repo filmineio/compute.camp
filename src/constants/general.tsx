@@ -301,8 +301,8 @@ export const FAQ = [
           <Link
             href="https://docs.google.com/document/d/1rSzLZ9igZumUCt9hvYiBeYn54_m2PMM8/edit?usp=sharing&ouid=116293820701550843517&rtpof=true&sd=true"
             target="_blank"
-            aria-label="Event photo orvideo"
-            title="Event photo orvideo"
+            aria-label="Event photo or video"
+            title="Event photo or video"
             aria-haspopup="false"
           >
             here
