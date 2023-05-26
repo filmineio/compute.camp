@@ -297,16 +297,12 @@ export const FAQ = [
           be captured on photo or video.
         </li>
         <li>
-          You can find our Event photo/video release{' '}
           <Link
             href="https://docs.google.com/document/d/1rSzLZ9igZumUCt9hvYiBeYn54_m2PMM8/edit?usp=sharing&ouid=116293820701550843517&rtpof=true&sd=true"
             target="_blank"
             aria-label="You can find our Event photo/video release"
-            title="You can find our Event photo/video release"
-            aria-haspopup="false"
-            passHref
           >
-            here
+            You can find our Event photo/video release
           </Link>
           .
         </li>
