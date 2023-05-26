@@ -148,11 +148,19 @@ export const SCHEDULE_DAY_2 = [
   {
     type: 'Pre-session',
     time: '8:00-9.30',
-    // label: 'Registration & Breakfast',
-    // author: 'John Evens',
     title: 'Breakfast',
-    // description:
-    //   'Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar dapibus leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
+  },
+  {
+    type: 'Talks',
+    time: '9:30-12.30',
+    title: 'Keynotes',
+    description:
+      "Attention, forward-thinkers! Join us as we curate a lineup of industry's vanguards who will share their insights, experiences, and forecasts through captivating keynotes. Don't miss this chance to gain a competitive edge and steer your career towards success.",
+  },
+  {
+    type: 'Break',
+    time: '12.30-1.30',
+    title: 'Lunch',
   },
 ];
 
