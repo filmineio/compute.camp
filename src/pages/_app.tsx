@@ -3,9 +3,14 @@ import { AppProps } from 'next/app';
 import SeoHeader from 'components/Common/SeoHeader/SeoHeader';
 import AppWrapper from 'components/AppWrapper/AppWrapper';
 import Footer from 'components/Common/Footer/Footer';
-import PostHog from 'components/PostHog/PostHog';
+import dynamic from 'next/dynamic';
+// import PostHog from 'components/PostHog/PostHog';
 
 import '../styles/style.scss';
+
+const PostHog = dynamic(() => import('components/PostHog/PostHog'), {
+  ssr: false,
+});
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   const title = 'Compute Camp';
