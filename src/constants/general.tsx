@@ -302,6 +302,8 @@ export const FAQ = [
             href="https://docs.google.com/document/d/1rSzLZ9igZumUCt9hvYiBeYn54_m2PMM8/edit?usp=sharing&ouid=116293820701550843517&rtpof=true&sd=true"
             target="_blank"
             aria-label="Event photo/video"
+            title="Event photo/video"
+            aria-haspopup="false"
           >
             here
           </Link>
