@@ -42,7 +42,7 @@ export const FOOTER_LINKS = [
   },
   {
     label: 'Tickets',
-    url: 'https://protocollabs.notion.site/fadc9a37763844769a13ee87234b90f8',
+    url: 'https://lu.ma/compute-camp',
     targetBlank: true,
   },
   {

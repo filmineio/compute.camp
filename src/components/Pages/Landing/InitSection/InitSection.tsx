@@ -24,7 +24,7 @@ const InitSection: FC = () => (
           <Star />
         </Link>
         <Link
-          href="https://protocollabs.notion.site/fadc9a37763844769a13ee87234b90f8"
+          href="https://lu.ma/compute-camp"
           target="_blank"
           className="button secondary"
           passHref
