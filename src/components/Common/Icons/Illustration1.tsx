@@ -7,6 +7,7 @@ const Illustration1: FC = () => (
     height="375"
     fill="none"
     viewBox="0 0 658 375"
+    aria-hidden="true"
   >
     <path
       fill="#312C83"

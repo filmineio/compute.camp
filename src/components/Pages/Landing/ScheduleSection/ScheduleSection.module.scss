@@ -24,6 +24,11 @@
       position: relative;
       color: #fff;
 
+      &:focus-visible {
+        outline: 2px solid #fff !important;
+        outline-offset: 2px;
+      }
+
       @media (max-width: 904px) {
         width: 250px;
         padding: 15px;
@@ -89,6 +94,8 @@
           top: calc(100% - 13px);
           left: 50%;
           transform: translateX(-50%) rotate(-90deg);
+          opacity: 0;
+          transition: opacity 200ms ease-in-out;
 
           .gradient-triangle {
             width: 50px;
@@ -103,7 +110,6 @@
               bottom: 10px;
               left: 10px;
               right: 10px;
-              -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg);
               background: linear-gradient(to top right, #FF5B72 0%, #F74E76 95%);
               border: 2px solid transparent;
@@ -113,16 +119,16 @@
                   background-image: linear-gradient(to top right, #FA5074, #F44179);
                 }
               }
-
-              @-moz-document url-prefix() {
-                //background-image: linear-gradient(to top right, #FF5B72, #F44179);
-              }
             }
           }
         }
 
         &.active {
           border-color: #fff;
+
+          .arrow {
+            opacity: 1;
+          }
 
           .gradient-triangle:after {
             border-color: #fff;
@@ -154,6 +160,8 @@
           top: calc(100% - 13px);
           left: 50%;
           transform: translateX(-50%) rotate(-90deg);
+          opacity: 0;
+          transition: opacity 200ms ease-in-out;
 
           .gradient-triangle {
             width: 50px;
@@ -168,7 +176,7 @@
               bottom: 10px;
               left: 10px;
               right: 10px;
-              -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
               background-color: rgba(31, 132, 226, 1);
               border: 2px solid transparent;
             }
@@ -177,6 +185,10 @@
 
         &.active {
           border-color: #fff;
+
+          .arrow {
+            opacity: 1;
+          }
 
           .gradient-triangle:after {
             border-color: #fff;
@@ -187,14 +199,8 @@
   }
 
   .schedule-content-wrapper {
-    overflow: hidden;
-    transition: all 280ms ease-in-out;
-    transform: scaleY(0);
-    transform-origin: top;
-
-    &.active {
-      transition-delay: 450ms;
-      transform: scaleY(1);
+    &[hidden] {
+      display: none;
     }
   }
 }

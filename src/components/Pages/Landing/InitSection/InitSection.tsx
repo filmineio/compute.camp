@@ -6,39 +6,43 @@ import Link from 'next/link';
 import styles from './InitSection.module.scss';
 
 const InitSection: FC = () => (
-  <div className={styles['init-section-wrapper']}>
+  <section className={styles['init-section-wrapper']}>
     <div className={styles['init-section-text']}>
-      <p>June 7th & 8th, 2023 Belgrade, Serbia</p>
+      <div className={styles['date-badge']}>
+        <span className={styles['badge-dot']} aria-hidden="true" />
+        Coming 2025 — Belgrade, Serbia
+      </div>
       <h1>
-        A gathering of compute science enthusiasts innovating in the different computing
+        A gathering of computing enthusiasts building the future of decentralized
+        infrastructure
       </h1>
+      <p className={styles['hosted-by']}>
+        Hosted by Protocol Labs, Web3Mine, and Fluence
+      </p>
       <div className={styles['buttons-wrapper']}>
         <Link
-          href="https://airtable.com/shrSfIQgLi8fF6zq5"
-          target="_blank"
+          href="mailto:info@compute.camp?subject=Notify%20me%20about%20Compute%20Camp%202025"
           className="button primary"
           passHref
-          aria-label="Submit a Talk"
+          aria-label="Get Notified about Compute Camp 2025"
         >
-          Submit a Talk
+          Get Notified
           <Star />
         </Link>
         <Link
-          href="https://lu.ma/compute-camp"
-          target="_blank"
-          className="button secondary"
+          href="#schedule"
+          className={styles['secondary-link']}
           passHref
-          aria-label="Get Tickets Now"
+          aria-label="View last year's schedule"
         >
-          Get Tickets Now
-          <Star />
+          View last year&apos;s schedule
         </Link>
       </div>
     </div>
     <div className={styles['init-section-illustration']}>
       <Illustration1 />
     </div>
-  </div>
+  </section>
 );
 
 export default InitSection;

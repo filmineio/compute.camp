@@ -40,13 +40,14 @@ const ParticipantsSingleParticipant: FC<ParticipantProps> = ({
           <Image
             className={styles['windows-image']}
             src={windowsImage}
-            alt="windowsImage"
+            alt=""
+            aria-hidden="true"
           />
 
           <Image
             className={styles['participant-image']}
             src={image}
-            alt="participantImage"
+            alt={`${name}, ${company}`}
           />
         </div>
 

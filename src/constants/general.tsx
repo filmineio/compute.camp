@@ -9,7 +9,7 @@ import Twitter from '../components/Common/Icons/Twitter';
 // import YouTube from '../components/Common/Icons/YouTube';
 
 export const META_IMAGE_LINK =
-  'https://compute-camp.vercel.app/static/compute-camp-meta.jpg';
+  'https://compute.camp/static/compute-camp-meta.jpg';
 
 export const FOOTER_SOCIALS = [
   // {
@@ -30,21 +30,6 @@ export const FOOTER_SOCIALS = [
 ];
 
 export const FOOTER_LINKS = [
-  // {
-  //   label: 'About',
-  //   url: '#',
-  //   targetBlank: false,
-  // },
-  {
-    label: 'Registration',
-    url: 'http://lu.ma/compute-camp',
-    targetBlank: true,
-  },
-  {
-    label: 'Tickets',
-    url: 'https://lu.ma/compute-camp',
-    targetBlank: true,
-  },
   {
     label: 'Schedule',
     url: '#schedule',
@@ -63,6 +48,11 @@ export const FOOTER_LINKS = [
   {
     label: 'FAQ',
     url: '#faq',
+    targetBlank: false,
+  },
+  {
+    label: 'Contact',
+    url: 'mailto:info@compute.camp',
     targetBlank: false,
   },
 ];
@@ -166,13 +156,13 @@ export const SCHEDULE_DAY_2 = [
 
 export const MENU_ITEMS = [
   {
-    label: 'Registration',
-    url: 'http://lu.ma/compute-camp',
-    targetBlank: true,
-  },
-  {
     label: 'Schedule',
     url: '#schedule',
+    targetBlank: false,
+  },
+  {
+    label: 'Participants',
+    url: '#participants',
     targetBlank: false,
   },
   {
@@ -181,8 +171,8 @@ export const MENU_ITEMS = [
     targetBlank: false,
   },
   {
-    label: 'Participants',
-    url: '#participants',
+    label: 'FAQ',
+    url: '#faq',
     targetBlank: false,
   },
 ];
@@ -249,7 +239,7 @@ export const FAQ = [
   {
     question: 'Who is it for?',
     answer:
-      'Compute Camp is for all CS enthusiasts, from database builders, cloud veterans or ',
+      'Compute Camp is for all computing enthusiasts, from database builders and cloud veterans to newcomers curious about the future of decentralized computing.',
   },
   {
     question: 'Are there any preferred hotels?',

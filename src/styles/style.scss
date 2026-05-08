@@ -1,16 +1,5 @@
 @import 'input_field';
 
-@font-face {
-  font-family: 'Conthrax SemiBold';
-  font-style: normal;
-  font-weight: normal;
-  src:
-    local('Conthrax SemiBold'),
-    url('../../public/font/conthrax-sb.woff')
-    format('woff');
-  font-display: swap;
-}
-
 body,
 body[data-theme="dark"] {
   --red: #cc3333;
@@ -65,7 +54,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-inter), 'Inter', sans-serif;
   color: var(--white);
   background-color: #232149;
   background: linear-gradient(#232149 0%, #512BDA 15%, #07F8E6 28%, #E0FFFF 34%, #FFFFFF 36%, #FFFFFF 64%, #E0FFFF 66%, #07F8E6 72%, #512BDA 85%, #232149 100%);
@@ -156,7 +145,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Conthrax SemiBold', sans-serif;
+  font-family: var(--font-conthrax), 'Conthrax SemiBold', sans-serif;
   font-weight: 600;
   color: var(--white);
   margin-top: 0;
@@ -164,11 +153,13 @@ h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 48px;
+  line-height: 1.1;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 36px;
+  line-height: 1.2;
 }
 
 h3 {
@@ -217,7 +208,7 @@ input::-webkit-credentials-auto-fill-button {
 }
 
 .button {
-  font-family: 'Conthrax SemiBold', sans-serif;
+  font-family: var(--font-conthrax), 'Conthrax SemiBold', sans-serif;
   margin: 0;
   padding: 17px 15px;
   font-weight: 700;

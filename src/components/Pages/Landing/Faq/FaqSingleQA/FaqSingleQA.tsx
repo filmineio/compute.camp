@@ -1,8 +1,6 @@
-import { Dispatch, FC, SetStateAction, useCallback, useMemo, useRef } from 'react';
-// import { useSpring, a } from 'react-spring';
-// import { string } from 'yup';
+import { Dispatch, FC, SetStateAction, useCallback, useMemo } from 'react';
+import clsx from 'clsx';
 import { qaProps } from '../Faq';
-// import { useMeasure } from '../useMeasure';
 import Arrow from '../../../../Common/Icons/Arrow/Arrow';
 
 import styles from './FaqSingleQA.module.scss';
@@ -16,46 +14,38 @@ type Props = {
 
 export const FaqSingleQA: FC<Props> = ({ qa, index, openQAIndex, setOpenQAIndex }) => {
   const isOpen = useMemo(() => index === openQAIndex, [index, openQAIndex]);
-  const contentEl = useRef<HTMLDivElement>(null);
-  const setOpenQAIndexCallback = useCallback(
+  const answerId = `faq-answer-${index}`;
+  const questionId = `faq-question-${index}`;
+
+  const handleToggle = useCallback(
     () => setOpenQAIndex(isOpen ? -1 : index),
     [isOpen, setOpenQAIndex, index],
   );
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  // const [bind, { height: viewHeight }] = useMeasure();
-  // const { height, opacity, marginTop } = useSpring({
-  //   from: { height: 0, opacity: 0, marginTop: 0 },
-  //   to: {
-  //     height: isOpen ? viewHeight : 0,
-  //     opacity: isOpen ? 1 : 0,
-  //     marginTop: isOpen ? 20 : 0,
-  //   },
-  // });
-
   return (
     <div className={styles['faq-single-qa-wrapper']}>
-      <div
+      <button
+        type="button"
+        id={questionId}
         className={styles['qa-section-single-qa-visible-wrapper']}
-        onClick={setOpenQAIndexCallback}
+        onClick={handleToggle}
+        aria-expanded={isOpen}
+        aria-controls={answerId}
       >
-        <div className={styles['qa-section-single-qa-visible-question']}>
+        <span className={styles['qa-section-single-qa-visible-question']}>
           {qa.question}
-        </div>
-
-        {isOpen ? <Arrow rotate /> : <Arrow />}
-      </div>
+        </span>
+        <Arrow rotate={isOpen} />
+      </button>
 
       <div
-        className={styles['qa-section-single-qa-answer-wrapper']}
-        // style={{ (typeof qa.answer) === string ? height : height: height + 30, opacity, marginTop }}
-        ref={contentEl}
-        style={isOpen ? { height: contentEl?.current?.scrollHeight } : { height: '0px' }}
+        id={answerId}
+        role="region"
+        aria-labelledby={questionId}
+        className={clsx(styles['qa-section-single-qa-answer-wrapper'], {
+          [styles.open]: isOpen,
+        })}
       >
-        {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
-        {/* @ts-ignore */}
-        {/* <div className={styles['qa-section-single-qa-answer-content']} {...bind}> */}
         <div className={styles['qa-section-single-qa-answer-content']}>{qa.answer}</div>
       </div>
     </div>

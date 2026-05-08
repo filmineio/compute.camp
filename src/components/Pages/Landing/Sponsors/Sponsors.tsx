@@ -30,7 +30,7 @@ const Sponsors: FC = () => {
 
           <div className={styles.logos}>
             <LogoIPFS />
-            <Image src={ipfsLogo} width="206" height="83" alt="templateLogo" />
+            <Image src={ipfsLogo} width="206" height="83" alt="IPFS Events logo" />
           </div>
         </div>
       </div>

@@ -20,21 +20,18 @@ const Participants: FC = () => {
       </div>
 
       <div className={styles['participants-content']}>
-        {PARTICIPANTS.map(
-          // @ts-ignore
-          ({ name, image, company, about, github, twitter, linkedIn }, index) => (
+        {PARTICIPANTS.map((participant, index) => (
             <ParticipantsSingleParticipant
               key={index}
-              image={image}
-              name={name}
-              company={company}
-              about={about}
-              github={github}
-              twitter={twitter}
-              linkedIn={linkedIn}
+              image={participant.image}
+              name={participant.name}
+              company={participant.company}
+              about={participant.about}
+              github={'github' in participant ? (participant.github as string) : undefined}
+              twitter={'twitter' in participant ? (participant.twitter as string) : undefined}
+              linkedIn={'linkedIn' in participant ? (participant.linkedIn as string) : undefined}
             />
-          ),
-        )}
+          ))}
 
         <div className={styles['participants-contact-us']}>
           <div className={styles['participants-contact-window-header']}>
@@ -45,12 +42,12 @@ const Participants: FC = () => {
 
           <div className={styles['participants-contact-content']}>
             <div className={styles['participants-contact-text']}>
-              Want to speak on our event?
+              Want to speak at our event?
             </div>
             <Link href="mailto:info@compute.camp" className="button primary">
               Contact Us!
             </Link>
-            <Image className={styles['cubes-image']} src={cubes} alt="cubes" />
+            <Image className={styles['cubes-image']} src={cubes} alt="" aria-hidden="true" />
           </div>
         </div>
       </div>

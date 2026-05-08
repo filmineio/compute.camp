@@ -1,4 +1,4 @@
-import { FC, useEffect, useReducer, useRef, useState } from 'react';
+import { FC, useState } from 'react';
 import { SCHEDULE_DAY_1, SCHEDULE_DAY_2 } from 'constants/general';
 import clsx from 'clsx';
 import ScheduleItem from './ScheduleItem/ScheduleItem';
@@ -6,89 +6,88 @@ import ScheduleItem from './ScheduleItem/ScheduleItem';
 import styles from './ScheduleSection.module.scss';
 
 const ScheduleSection: FC = () => {
-  const [isFirstDayActive, setIsFirstDayActive] = useState(true);
-  const [, forceUpdate] = useReducer((x) => x + 1, 0);
-  const contentEl1 = useRef<HTMLDivElement>(null);
-  const contentEl2 = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    forceUpdate();
-  }, []);
-
-  useEffect(() => {
-    const listener = () => {
-      window.addEventListener('resize', () => {
-        forceUpdate();
-      });
-    };
-
-    listener();
-
-    return () => listener();
-  }, []);
+  const [activeTab, setActiveTab] = useState<'day1' | 'day2'>('day1');
 
   return (
-    <div id="schedule" className={styles['schedule-section-wrapper']}>
+    <section id="schedule" className={styles['schedule-section-wrapper']}>
       <h2>Schedule</h2>
-      <div className={styles['schedule-buttons-wrapper']}>
+      <div className={styles['schedule-buttons-wrapper']} role="tablist" aria-label="Schedule days">
         <button
           type="button"
+          role="tab"
+          id="tab-day1"
+          aria-selected={activeTab === 'day1'}
+          aria-controls="tabpanel-day1"
+          tabIndex={activeTab === 'day1' ? 0 : -1}
           className={clsx(styles['day-01'], {
-            [styles.active]: isFirstDayActive,
+            [styles.active]: activeTab === 'day1',
           })}
-          onClick={() => setIsFirstDayActive(true)}
+          onClick={() => setActiveTab('day1')}
+          onKeyDown={(e) => {
+            if (e.key === 'ArrowRight') {
+              setActiveTab('day2');
+              document.getElementById('tab-day2')?.focus();
+            }
+          }}
         >
           <h3 className={styles.text}>Day 01</h3>
-          <span className={styles.date}>Wed, June 7</span>
-          <div className={styles.arrow}>
+          <span className={styles.date}>TBA</span>
+          <div className={styles.arrow} aria-hidden="true">
             <div className={styles['gradient-triangle']} />
           </div>
         </button>
         <button
           type="button"
+          role="tab"
+          id="tab-day2"
+          aria-selected={activeTab === 'day2'}
+          aria-controls="tabpanel-day2"
+          tabIndex={activeTab === 'day2' ? 0 : -1}
           className={clsx(styles['day-02'], {
-            [styles.active]: !isFirstDayActive,
+            [styles.active]: activeTab === 'day2',
           })}
-          onClick={() => setIsFirstDayActive(false)}
+          onClick={() => setActiveTab('day2')}
+          onKeyDown={(e) => {
+            if (e.key === 'ArrowLeft') {
+              setActiveTab('day1');
+              document.getElementById('tab-day1')?.focus();
+            }
+          }}
         >
-          <h3 className={styles.text}>FVM day</h3>
-          <span className={styles.date}>Thu, June 8</span>
-          <div className={styles.arrow}>
+          <h3 className={styles.text}>Day 02</h3>
+          <span className={styles.date}>TBA</span>
+          <div className={styles.arrow} aria-hidden="true">
             <div className={styles['gradient-triangle']} />
           </div>
         </button>
       </div>
       <div
+        role="tabpanel"
+        id="tabpanel-day1"
+        aria-labelledby="tab-day1"
         className={clsx(styles['schedule-content-wrapper'], {
-          [styles.active]: isFirstDayActive,
+          [styles.active]: activeTab === 'day1',
         })}
-        ref={contentEl1}
-        style={
-          isFirstDayActive
-            ? { maxHeight: contentEl1?.current?.scrollHeight }
-            : { maxHeight: '0px' }
-        }
+        hidden={activeTab !== 'day1'}
       >
         {SCHEDULE_DAY_1.map((item) => (
           <ScheduleItem key={item.title} item={item} />
         ))}
       </div>
       <div
+        role="tabpanel"
+        id="tabpanel-day2"
+        aria-labelledby="tab-day2"
         className={clsx(styles['schedule-content-wrapper'], {
-          [styles.active]: !isFirstDayActive,
+          [styles.active]: activeTab === 'day2',
         })}
-        ref={contentEl2}
-        style={
-          !isFirstDayActive
-            ? { maxHeight: contentEl2?.current?.scrollHeight }
-            : { maxHeight: '0px' }
-        }
+        hidden={activeTab !== 'day2'}
       >
         {SCHEDULE_DAY_2.map((item) => (
           <ScheduleItem key={item.title} item={item} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,5 +1,12 @@
 import { FC, ReactElement } from 'react';
 
-const AppWrapper: FC<{ children: ReactElement }> = ({ children }) => <>{children}</>;
+type AppWrapperProps = {
+  children: ReactElement;
+  className?: string;
+};
+
+const AppWrapper: FC<AppWrapperProps> = ({ children, className }) => (
+  <div className={className}>{children}</div>
+);
 
 export default AppWrapper;

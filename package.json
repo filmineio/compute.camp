@@ -1,5 +1,5 @@
 {
-  "name": "beodesk",
+  "name": "compute-camp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,23 +15,17 @@
   "dependencies": {
     "@next/font": "13.1.6",
     "clsx": "^1.2.1",
-    "formik": "^2.2.9",
-    "gray-matter": "^4.0.3",
+    "components": "^0.1.0",
     "husky": "^7.0.4",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-device-detect": "^2.2.3",
     "react-dom": "18.2.0",
-    "react-select": "^5.7.0",
-    "react-spring": "^9.7.1",
-    "resize-observer-polyfill": "^1.5.1",
-    "sass": "^1.58.0",
-    "yup": "^1.0.2"
+    "sass": "^1.58.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.17",
     "@types/react": "^18.0.28",
-    "@types/react-dom": "^17.0.13",
+    "@types/react-dom": "^18.0.10",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.11.0",
     "babel-eslint": "^10.1.0",
@@ -39,7 +33,7 @@
     "concurrently": "^7.0.0",
     "eslint": "7.32.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-next": "11.1.2",
+    "eslint-config-next": "13.1.6",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-jsconfig": "^1.1.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
